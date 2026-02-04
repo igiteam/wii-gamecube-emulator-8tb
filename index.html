@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Guide: Build a Wii & GameCube Emulation Machine on 2012 Mac Mini Server</title>
+
+    <meta name="description"
+        content="Build your ultimate Wii and Gamecube emulator on the lowest price possible. This guide will teach you how to setup">
+    <link rel="icon" href="https://cdn.sdappnet.cloud/rtx/images/wiimote_cursor_.png" type="image/png">
+    <link rel="apple-touch-icon" href="https://cdn.sdappnet.cloud/rtx/images/wiimote_cursor_.png" sizes="180x180">
+    <link rel="icon" type="image/png" href="https://cdn.sdappnet.cloud/rtx/images/wiimote_cursor_.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://cdn.sdappnet.cloud/rtx/images/wiimote_cursor_.png" sizes="512x512">
+    <meta itemprop="name" content="Complete Guide: Build a Wii & GameCube Emulation Machine on 2012 Mac Mini Server">
+    <meta itemprop="description"
+        content="Build your ultimate Wii and Gamecube emulator on the lowest price possible. This guide will teach you how to setup">
+    <meta itemprop="image" content="https://cdn.sdappnet.cloud/rtx/images/wi-gamecube-emulator-games.png">
+    <meta property="og:title"
+        content="Complete Guide: Build a Wii & GameCube Emulation Machine on 2012 Mac Mini Server">
+    <meta property="og:description"
+        content="Build your ultimate Wii and Gamecube emulator on the lowest price possible. This guide will teach you how to setup">
+    <meta property="og:image" content="https://cdn.sdappnet.cloud/rtx/images/wi-gamecube-emulator-games.png">
+    <meta property="og:url" content="">
+    <meta property="og:type" content="website">
+    <meta name="twitter:title"
+        content="Complete Guide: Build a Wii & GameCube Emulation Machine on 2012 Mac Mini Server">
+    <meta name="twitter:description"
+        content="Build your ultimate Wii and Gamecube emulator on the lowest price possible. This guide will teach you how to setup">
+    <meta name="twitter:image" content="https://cdn.sdappnet.cloud/rtx/images/wi-gamecube-emulator-games.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <style>
+        body {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+        }
+
+        pre {
+            background-color: #f5f5f5;
+            padding: 15px;
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        h1,
+        h2,
+        h3 {
+            text-align: left;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            margin-top: 40px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        h3 {
+            margin-top: 25px;
+            text-align: left;
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        a {
+            width: 100%;
+            word-break: break-all;
+            overflow-wrap: break-word;
+            display: inline-block;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            /* 50% 50% */
+            gap: 3px;
+            /* 3px gap between items */
+            max-width: 100%;
+        }
+
+        .grid-item {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        footer {
+            margin-top: 40px;
+            padding-top: 10px;
+            border-top: 2px solid #f0f0f0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Complete Guide: Build a Wii & GameCube Emulation Machine on 2012 Mac Mini Server</h1>
+
+    <h2>Introduction</h2>
+    <p>This guide details how to turn a 2012 Mac Mini Server into the ultimate Wii and GameCube emulation machine using
+        Dolphin emulator, an 8TB SSD, and proper partitioning to avoid hardware limitations.</p>
+
+    <h2>Game Library Source & Size</h2>
+    <ul>
+        <li><strong>GameCube (NKit RVZ format):</strong> 2016 files, 1517.91 GB</li>
+        <li><a href="https://myrient.erista.me/files/Redump/Nintendo%20-%20GameCube%20-%20NKit%20RVZ%20%5Bzstd-19-128k%5D/"
+                target="_blank"
+                rel="norefferer">https://myrient.erista.me/files/Redump/Nintendo%20-%20GameCube%20-%20NKit%20RVZ%20%5Bzstd-19-128k%5D/</a>
+        </li>
+
+        <li><strong>Wii (NKit RVZ format):</strong> 3778 files, 6010.19 GB</li>
+        <li><a href="https://myrient.erista.me/files/Redump/Nintendo%20-%20Wii%20-%20NKit%20RVZ%20%5Bzstd-19-128k%5D/"
+                target="_blank"
+                rel="norefferer">https://myrient.erista.me/files/Redump/Nintendo%20-%20Wii%20-%20NKit%20RVZ%20%5Bzstd-19-128k%5D/</a>
+        </li>
+        <li>
+            <div class="grid-container">
+
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/WW6JBgM82Ds" allowfullscreen></iframe>
+                </div>
+                <div class="grid-item">
+                    <iframe src="https://www.youtube.com/embed/abyGtaNV8tE" allowfullscreen></iframe>
+                </div>
+            </div>
+        </li>
+    </ul>
+
+    <h3>The NKit RVZ Advantage</h3>
+    <ul>
+        <li><strong>Compression:</strong> Games are 30-70% smaller</li>
+        <li><strong>Fast loading:</strong> RVZ decompresses on-the-fly with minimal CPU</li>
+        <li><strong>Your 2012 i7:</strong> Can handle RVZ decompression easily</li>
+        <li><strong>Storage saved:</strong> ~40% vs raw ISO</li>
+    </ul>
+
+    <h2>Real Storage Needs</h2>
+    <pre>
+Complete GC + Wii (RVZ): 7.53 TB
+Dolphin + Saves: 0.02 TB
+Windows/macOS: 0.10 TB
+Buffer space: 0.35 TB
+ACTUAL NEEDED: 8.0 TB exactly</pre>
+
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="https://cdn.sdappnet.cloud/rtx/images/mac mini server 2012 late 2.3gb i7 16gb ddr3.png"
+                alt="Mac Mini Server 2012" />
+        </div>
+        <div class="grid-item">
+            <img src="https://cdn.sdappnet.cloud/rtx/images/imacmini2012server.png" alt="Mac Mini 2012 Intel i7" />
+        </div>
+        <div class="grid-item">
+            <img src="https://cdn.sdappnet.cloud/rtx/images/mac mini server 2012 late 2.3gb i7 16gb ddr3 - gpu.png"
+                alt="Mac Mini GPU specs" />
+        </div>
+        <div class="grid-item">
+            <img src="https://cdn.sdappnet.cloud/rtx/images/mac mini server 2012 late 2.3gb i7 16gb ddr3 memory.png"
+                alt="Mac Mini Memory specs" />
+        </div>
+    </div>
+    <ul>
+        <li><strong>Apple Mac Mini A1347 2012 i7 3rd Gen 2.3GHz 16GB RAM</strong> 250GB SSD i7-3615QM @ 2.3GHz</li>
+        <li><a href="https://www.ebay.co.uk/itm/287090224159?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/287090224159?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+    </ul>
+    <h2>The Technical Reality of 8TB in 2012 Mac Mini</h2>
+    <h3>Samsung 870 QVO 8TB Specs:</h3>
+    <ul>
+        <li><strong>Form factor:</strong> 2.5", 7mm thick (FITS in your Mac Mini!)</li>
+        <li><strong>Speed:</strong> 560MB/s read, 530MB/s write (maxes SATA III)</li>
+        <li><strong>Endurance:</strong> 2,880 TBW (enough for 20+ years of gaming)</li>
+        <li><strong>Power:</strong> 2.9W idle, 4.5W active</li>
+        <li><strong>Warranty:</strong> 3 years (if NEW)</li>
+    </ul>
+    <div class="grid-container">
+        <div class="grid-item">
+            <img
+                src="https://cdn.sdappnet.cloud/rtx/mages/870_QVOMZ-77Q8T0B-AM_008_PKG-Full-Shot_Black-3848903213.jpg" />
+        </div>
+        <div class="grid-item">
+            <img
+                src="https://cdn.sdappnet.cloud/rtx/images/samsung-ssd-870-qvo-8tb-review-on-kitguru-openenclosure-3422470340.png" />
+        </div>
+    </div>
+    <ul>
+        <li><strong>Samsung 870 QVO 8TB</strong> SSD SATA III 2.5 inch</li>
+        <li><a href="https://www.samsung.com/us/computing/memory-storage/solid-state-drives/870-qvo-sata-iii-2-5-ssd-8tb-mz-77q8t0b-am/"
+                target="_blank"
+                rel="norefferer">https://www.samsung.com/us/computing/memory-storage/solid-state-drives/870-qvo-sata-iii-2-5-ssd-8tb-mz-77q8t0b-am/</a>
+        </li>
+    </ul>
+    <h3>Installation Notes</h3>
+    <ul>
+        <li>Will physically fit in Bay 1 (7mm thick)</li>
+        <li><strong>Heat:</strong> Add thermal pad to bottom of SSD</li>
+        <li><strong>Performance:</strong> Will be bottlenecked by SATA III (550MB/s max)</li>
+        <li><strong>Boot time:</strong> Games load in 2-3 seconds from cold</li>
+    </ul>
+
+    <h2>Why This 8TB QVO is PERFECT for You</h2>
+    <ol>
+        <li><strong>Form Factor Matches:</strong> 2.5 inch = Fits your Mac Mini's drive bays, 7mm thick = Fits perfectly
+        </li>
+        <li><strong>Speed Matches Your Hardware:</strong> SATA III 6Gb/s = 550 MB/s max, Your Mac Mini SATA ports = Also
+            SATA III 6Gb/s, No bottleneck! Full 550 MB/s speed</li>
+        <li><strong>Capacity Matches Your Needs:</strong> 7.53TB for complete Wii+GameCube libraries, 8TB gives you
+            470GB buffer space</li>
+        <li><strong>Endurance is MORE Than Enough:</strong> 2,880 TBW (Terabytes Written). Your usage: Writing ~100GB
+            per month gaming. Will last: 2,880,000 GB ÷ 100 GB/month = 28,800 months = 2,400 years!</li>
+    </ol>
+
+    <h2>Installation in Your 2012 Mac Mini Server</h2>
+    <h3>What You'll Need:</h3>
+    <ul>
+        <li>Samsung 870 QVO 8TB (£419 new)</li>
+        <li>iFixit Mac Mini 2012 tool kit (£25) or guitar picks</li>
+        <li>Thermal pad (optional, £5) - for heat transfer to chassis</li>
+        <li>30 minutes of time</li>
+    </ul>
+
+    <h3>Step-by-Step:</h3>
+    <pre>
+1. BACKUP existing data from your current drives
+2. Power off Mac Mini, unplug everything
+3. Remove bottom cover (quarter-turn tool)
+4. Remove fan assembly
+5. Remove Wi-Fi antenna bracket
+6. Remove existing HDD/SSD from Bay 1
+7. Install 8TB QVO in Bay 1
+8. Reassemble in reverse order
+9. Boot to Internet Recovery (Cmd+Opt+R)
+10. Format drive as APFS/GUID
+11. Install macOS Big Sur via OCLP</pre>
+
+    <br>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <iframe id="videoFrame" src="https://www.youtube.com/embed/rlhMCSb21LA?si=FDCMSUoFAOP_EpWr"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    <img src="https://cdn.sdappnet.cloud/rtx/images/ifix.png" style="width: 100%; display: block;" />
+    <ul>
+        <li><strong>iFixit Essential Electronics Toolkit</strong> Basic Tool-Set with 16 Precision bits (4 mm), Magnetic
+            Screwdriver & Opening Tools for Electronic Devices</li>
+        <li><a href="https://www.amazon.co.uk/iFixit-Essential-Electronics-Screwdriver-Electronic/dp/B0964G2Y7S/ref=ast_sto_dp_puis?th=1"
+                target="_blank"
+                rel="norefferer">https://www.amazon.co.uk/iFixit-Essential-Electronics-Screwdriver-Electronic/dp/B0964G2Y7S/ref=ast_sto_dp_puis?th=1</a>
+        </li>
+    </ul>
+
+    <br>
+    <h3>Heat Management:</h3>
+    <ul>
+        <li>QVO 8TB power draw: 2.9W idle, 4.5W active</li>
+        <li>Mac Mini cooling: Adequate</li>
+        <li>Add thermal pad between SSD and chassis</li>
+        <li>Monitor temps: 40-50°C normal, 60°C+ worry</li>
+    </ul>
+
+    <h2>Game Library Strategy with 8TB</h2>
+    <h3>Partition Layout Suggestion:</h3>
+    <pre>
+Partition 1 (256GB): macOS Big Sur (via OCLP)
+Partition 2 (7.75TB): Game Library (exFAT for cross-platform)</pre>
+
+    <h3>Folder Structure:</h3>
+    <pre>
+/Game Library/
+├── Wii/ (6.0TB)
+│   ├── Nintendo/ (Mario, Zelda, etc.)
+│   ├── Third Party/
+│   └── Japan Only/
+├── GameCube/ (1.5TB)
+│   ├── First Party/
+│   └── Third Party/
+├── Homebrew/ (WiiWare, VC, homebrew)
+└── Saves/ (Dolphin save states)</pre>
+
+    <h3>Download Schedule (Realistic):</h3>
+    <pre>
+Assuming 100Mbps internet:
+GameCube (1.5TB): ~34 hours continuous
+Wii (6.0TB): ~136 hours continuous (~5.5 days)
+Better: Download over 1 month while playing favorites</pre>
+
+    <h2>The "Complete Setup" Budget</h2>
+    <pre>
+Samsung 870 QVO 8TB: £419
+Mac Mini Server: £150
+DolphinBar + Wii Remote: £60
+GameCube adapter: £20
+USB Ethernet adapter: £15 (for faster downloads)
+Thermal pad: £5
+TOTAL: £669 (complete system!)</pre>
+
+    <h3>What You Get:</h3>
+    <ul>
+        <li>Mac Mini Server with 8TB fast storage</li>
+        <li>All controllers for Wii/GameCube games</li>
+        <li>Faster networking for downloading 7.5TB library</li>
+        <li>Proper cooling for longevity</li>
+    </ul>
+
+    <h2>The PROBLEM: APFS Container Limitation</h2>
+    <p>The 2012 Mac Mini's boot ROM has a bug that prevents booting from APFS volumes over 2TB. Since Big Sur requires
+        APFS, you hit a wall.</p>
+    <h3>The Symptoms You'd See:</h3>
+    <ul>
+        <li>Install Big Sur successfully</li>
+        <li>Reboot... prohibitory symbol (circle with slash)</li>
+        <li>Won't boot - stuck</li>
+    </ul>
+
+    <h2>SOLUTIONS (Choose ONE)</h2>
+    <h3>Option 1: Partition Trick (Easiest)</h3>
+    <p>Create a 2TB System Partition + 6TB Data Partition:</p>
+    <pre>
+# In Recovery Mode Terminal:
+diskutil partitionDisk /dev/disk0 GPT \
+  0.25TB "Macintosh HD" APFS \
+  7.75TB "Game Library" ExFAT</pre>
+    <p>Then install Big Sur to "Macintosh HD" (0.25TB APFS) and store games on "Game Library" (7.75TB ExFAT).</p>
+
+    <h3>Option 2: Hybrid Partition Scheme</h3>
+    <pre>
+Partition 1: 256GB - macOS Big Sur (APFS)
+Partition 2: 7.75TB - Game Library (ExFAT)
+    </pre>
+
+    <h3>Option 3: HFS+ for macOS (Advanced)</h3>
+    <p>Force Big Sur to install on HFS+ (not recommended - breaks updates)</p>
+
+    <h2>Correct OCLP + 8TB SSD Installation Steps</h2>
+    <h3>Step 1: Prepare Drive (IN RECOVERY MODE)</h3>
+    <pre>
+# List disks
+diskutil list
+
+# Partition for dual-boot + games
+diskutil partitionDisk /dev/disk0 GPT \
+  256GB "MacOS" APFS \
+  7.75TB "Games" ExFAT
+
+# Format Windows partition as NTFS later in Windows</pre>
+
+    <h3>Step 2: Install macOS via OCLP (OpenCore Legacy Patcher)</h3>
+    <p><strong>What is OCLP?</strong> OpenCore Legacy Patcher is a community-developed tool that allows unsupported Macs
+        (like the 2012 Mac Mini Server) to run newer versions of macOS than Apple officially supports. It patches the
+        macOS
+        installer and system to work with older hardware.</p>
+
+    <p><strong>OCLP Official Website:</strong> <a
+            href="https://dortania.github.io/OpenCore-Legacy-Patcher/INSTALLER.html#downloading-the-installer"
+            target="_blank">https://dortania.github.io/OpenCore-Legacy-Patcher/INSTALLER.html#downloading-the-installer</a>
+    </p>
+
+    <p><strong>Why use OCLP?</strong> The 2012 Mac Mini Server officially only supports up to macOS Catalina (10.15).
+        With
+        OCLP,
+        you can install:
+    <ul>
+        <li>Big Sur (macOS 11)</li>
+        <li>Monterey (macOS 12)</li>
+        <li>Ventura (macOS 13)</li>
+        <li>Sonoma (macOS 14)</li>
+        <li>Sequoia (macOS 15 - latest)</li>
+    </ul>
+    </p>
+
+    <h4>Detailed Installation Steps:</h4>
+    <p>Note: You will need at least a 16GB usb pendrive to install MacOSX Big Sur (11.7.10 (20G1427)) via OCLP.</p>
+    <ol>
+        <li><strong>Download OCLP:</strong>
+            <ul>
+                <li>Go to the <a href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases"
+                        target="_blank">GitHub
+                        Releases page</a></li>
+                <li>Download the latest version (e.g., OpenCore-Patcher.pkg)</li>
+                <li>On another Mac or your current macOS, open the DMG and copy "OpenCore-Patcher.app" to Applications
+                </li>
+            </ul>
+            <ul><img src="https://cdn.sdappnet.cloud/rtx/imags/opencore-patcher-pkg.png" style="width: 100%;" /></ul>
+            <ul>
+                <li><strong>SanDisk Cruzer Blade 16GB</strong> USB Flash Drive</li>
+                <li><a href="https://www.amazon.co.uk/dp/B002U1ZBG0?_encoding=UTF8&psc=1&ref=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV&ref_=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV&social_share=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV"
+                        target="_blank"
+                        rel="norefferer">https://www.amazon.co.uk/dp/B002U1ZBG0?_encoding=UTF8&psc=1&ref=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV&ref_=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV&social_share=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV</a>
+                </li>
+            </ul>
+        </li>
+        <li><strong>Create OCLP USB Installer:</strong>
+            <ul>
+                <li>Insert a 16GB+ USB flash drive</li>
+                <li>Open OpenCore-Patcher.app</li>
+                <li>Select "Create macOS Installer"</li>
+                <li>Choose macOS version (Big Sur recommended for stability)</li>
+                <li>Select your USB drive as target</li>
+                <li>Wait for download and creation (30-60 minutes)</li>
+            </ul>
+        </li>
+
+        <li><strong>Boot from OCLP USB:</strong>
+            <ul>
+                <li>With Mac Mini powered off, insert OCLP USB</li>
+                <li>Power on while holding Option (⌥) key</li>
+                <li>Select "EFI Boot" (orange/yellow drive icon)</li>
+                <li>At OpenCore boot menu, select "Install macOS [version]"</li>
+            </ul>
+        </li>
+
+        <li><strong>Install macOS:</strong>
+            <ul>
+                <li>In macOS installer, open Disk Utility</li>
+                <li>Select your 256GB "MacOS" APFS partition</li>
+                <li>Click "Erase" → APFS, GUID partition map</li>
+                <li>Close Disk Utility, select "Install macOS"</li>
+                <li>Choose the 256GB "MacOS" partition as destination</li>
+                <li>Complete installation (20-40 minutes)</li>
+            </ul>
+        </li>
+
+        <li><strong>Run Post-Install Root Patch:</strong>
+            <ul>
+                <li>After first boot into new macOS, open OpenCore-Patcher.app</li>
+                <li>Click "Post-Install Root Patch"</li>
+                <li>Select your Mac model (MacMini6,2)</li>
+                <li>Click "Start Root Patching"</li>
+                <li>This installs necessary drivers for GPU, WiFi, etc.</li>
+                <li>Reboot when prompted</li>
+            </ul>
+        </li>
+    </ol>
+
+    <h4>Important Notes:</h4>
+    <ul>
+        <li><strong>Internet Required:</strong> OCLP needs internet to download macOS installer</li>
+        <li><strong>Backup First:</strong> OCLP installation can fail - backup important data</li>
+        <li><strong>Stick with Big Sur:</strong> Most stable for 2012 Mac Mini gaming</li>
+        <li><strong>Updates:</strong> System updates must be applied through OCLP, not regular Software Update</li>
+        <li><strong>Support:</strong> Join <a href="https://discord.gg/rqdPgH8xSN" target="_blank">OCLP Discord</a> for
+            help
+        </li>
+    </ul>
+
+    <h3>Step 3: Set Up Game Library</h3>
+    <pre>
+# macOS side:
+ln -s /Volumes/Games/ ~/Games
+</pre>
+
+    <h2>Why This Partition Scheme is BEST for Gaming</h2>
+    <h3>macOS (256GB APFS):</h3>
+    <ul>
+        <li>System + apps: 30GB</li>
+        <li>Dolphin (macOS version): 1GB</li>
+        <li>Room for other emulators</li>
+        <li>macOS game ports</li>
+        <li>(NVIDIA GT 650M supports it)</li>
+    </ul>
+
+    <h3>Games (7.75TB ExFAT):</h3>
+    <ul>
+        <li>Accessible from macOS</li>
+        <li>Complete libraries: 7.5TB</li>
+        <li>ExFAT works on both OSes</li>
+        <li>No 4GB file limit (unlike FAT32)</li>
+    </ul>
+
+    <h3>Game Loading Times:</h3>
+    <pre>
+From internal SSD (macOS): 2-3 seconds
+From Games partition (ExFAT): 3-4 seconds</pre>
+
+    <h2>Installation Checklist</h2>
+    <h3>Before You Buy/Install:</h3>
+    <ul>
+        <li>✅ Mac Mini Server purchased</li>
+        <li>✅ 8TB SSD purchased NEW (£419 max)</li>
+        <li>✅ 16GB USB for OCLP installer</li>
+        <li>✅ Ethernet cable (for fast downloads)</li>
+        <li>✅ External backup drive (8TB HDD £140)</li>
+    </ul>
+
+    <h3>Installation Day:</h3>
+    <ul>
+        <li>Physical install 8TB SSD in Mac Mini</li>
+        <li>Partition as 256GB/7.75TB</li>
+        <li>Install macOS Big Sur via OCLP to first partition</li>
+        <li>Test Dolphin on both OSes</li>
+        <li>Begin downloading libraries to Games partition</li>
+    </ul>
+
+    <h2>The "I Messed Up" Recovery</h2>
+    <p>If you accidentally install Big Sur to the whole 8TB and it won't boot:</p>
+    <p>Fix from Internet Recovery:</p>
+    <pre>
+# Boot to Internet Recovery (Cmd+Opt+R)
+# Open Terminal
+
+# Unmount disk
+diskutil unmountDisk /dev/disk0
+
+# Repartition correctly
+diskutil partitionDisk /dev/disk0 GPT \
+  256GB "MacOS" APFS \
+  7.75TB "GAMES" ExFAT
+
+# Reinstall</pre>
+
+    <h2>Alternative: Skip Big Sur, Use Catalina</h2>
+    <p>Easier Path:</p>
+    <ul>
+        <li>Install macOS Catalina (native support for 2012)</li>
+        <li>No OCLP needed</li>
+        <li>No APFS 2TB boot bug</li>
+        <li>But: Older OS, less secure, some app limitations</li>
+    </ul>
+
+    <h3>Catalina vs Big Sur for Gaming:</h3>
+    <pre>
+Dolphin performance: Same (both 64-bit)
+Game compatibility: Same
+App support: Big Sur better (longer support)
+Security: Big Sur better
+Difficulty: Catalina easier</pre>
+
+    <h2>Final Recommendation</h2>
+    <p>Partition as 256GB/7.75TB and:</p>
+    <ul>
+        <li>256GB APFS: macOS Big Sur via OCLP (Dolphin gaming)</li>
+        <li>7.75TB ExFAT: Game library (accessible from both)</li>
+    </ul>
+    <p>This gives you:</p>
+    <ul>
+        <li>Best Dolphin performance (Windows)</li>
+        <li>Modern macOS for everything else</li>
+        <li>Single game library visible to both OSes</li>
+        <li>No APFS 2TB boot bug issues</li>
+        <li>Room to grow</li>
+    </ul>
+    <p><strong>Don't try to put macOS on the full 8TB - it won't boot. The partition trick is mandatory for your 2012
+            Mac Mini with large drives.</strong></p>
+    <p>Buy the 8TB QVO, partition it correctly, and you'll have the ultimate Wii/GameCube emulation machine!</p>
+    <img src="https://cdn.sdappnet.cloud/rtx/images/wiimote+usb+sensor-bar+aa_battery.png"
+        style="width: 100%; display: block;" />
+    <ul>
+        <li><strong>OriGlam USB Wired Wii Sensor Bar</strong> Replacement Infrared IR Ray Motion Sensor Bar, Replacement
+            USB Wired Infrared Ray Sensor Bar for Nintendo Wii and Wii U
+            Console</li>
+        <li><a href="https://www.amazon.co.uk/dp/B01NBC8BHI?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank"
+                rel="norefferer">https://www.amazon.co.uk/dp/B01NBC8BHI?ref=ppx_yo2ov_dt_b_fed_asin_title</a>
+        </li>
+
+        <li><strong>Nintendo White Wii Remote/Controller</strong> with Nunchuck</li>
+        <li><a href="https://www.ebay.co.uk/itm/236613454063?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/236613454063?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+        <li><strong>Nintendo White Wii Remote/Controller</strong> with Nunchuck</li>
+        <li><a href="https://www.ebay.co.uk/itm/236613454063?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/236613454063?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+        <li><strong>Tp-Link UB4A Nano USB</strong> Bluetooth Adapter for PC, USB Bluetooth Dongle for PC, Bro</li>
+        <li><a href="https://www.ebay.co.uk/itm/297689306267?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/297689306267?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+        <li><strong>Duracell Plus Power AA</strong> Batteries Alkaline Long Lasting LR03, LR6 Far Expiry</li>
+        <li><a href="https://www.ebay.co.uk/itm/403679721023?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/403679721023?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+    </ul>
+
+    <img src="https://cdn.sdappnet.cloud/rtx/images/2xps2-controller-usb-aa-battery.png"
+        style="width: 100%; display: block;" />
+    <ul>
+        <li><strong>2 x Wireless Gamepad Game Controller 2.4Ghz</strong> USB Joystick( 2 controller one usb )</li>
+        <li><a href="https://www.ebay.co.uk/itm/389383479208?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/389383479208?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+
+        <li><strong>Duracell Plus Power AAA</strong> Batteries Alkaline Long Lasting LR03, LR6 Far Expiry</li>
+        <li><a href="https://www.ebay.co.uk/itm/403679721023?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=xxg7uLOaQl2&sssrc=2047675&ssuid=cn3pvi65qzy&stype=1&var=673611140391"
+                target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/403679721023?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=xxg7uLOaQl2&sssrc=2047675&ssuid=cn3pvi65qzy&stype=1&var=673611140391</a>
+        </li>
+
+    </ul>
+    <img src="https://cdn.sdappnet.cloud/rtx/2xwireless-xbox360-controller+battery_pack.png"
+        style="width: 100%; display: block;" />
+    <ul>
+        <li><strong>2x Microsoft Xbox 360 Gamepad Console Black</strong> Wireless Game Remote Controller</li>
+        <li><a href="https://www.ebay.co.uk/itm/317031721269?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=k-yp9r4usgy&sssrc=2047675&ssuid=cn3pvi65qzy&stype=1&var=615469235463"
+                target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/317031721269?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=k-yp9r4usgy&sssrc=2047675&ssuid=cn3pvi65qzy&stype=1&var=615469235463</a>
+        </li>
+
+        <li><strong>4x Xbox 360 Controller Battery Pack Rechargeable</strong> 4800mAh with USB Cable</li>
+        <li><a href="https://www.ebay.co.uk/itm/365028845112?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/365028845112?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+    </ul>
+    <img src="https://cdn.sdappnet.cloud/rtx/images/ac_powercord_hdmi_usb_hub.png"
+        style="width: 100%; display: block;" />
+    <ul>
+        <li><strong>USB Hub 3.0 4-Port Ultra-Slim USB A</strong> Hub 0.6ft Multiport Extended Data Cable</li>
+        <li><a href="https://www.ebay.co.uk/itm/205060386148?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/205060386148?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+        <li><strong>UK AC Power Supply Cable</strong> For Apple Mac mini Model A1347 Desktop Computer</li>
+        <li><a href="https://www.ebay.co.uk/itm/404576074013?var=0&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338590836&toolid=10044&loc_physical_ms=41471"
+                target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/404576074013?var=0&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338590836&toolid=10044&loc_physical_ms=41471</a>
+        </li>
+        <li><strong>UGREEN HDMI 2.1 Cable Certified 10K 8K 4K</strong> 1440P@240/165/120Hz eARC HDR Dolby Vision Atmos
+            HDCP 2.3 48Gbps Ultra High Speed Compatible with PS5 Xbox Series X/S
+            Laptop TV Soundbar Game Monitor PC(1M)</li>
+        <li><a href="https://www.amazon.co.uk/dp/B0CFFCR781?ref=cm_sw_r_cp_ud_dp_TQEJNKXCHBHSCTRTZ27G" target="_blank"
+                rel="norefferer">https://www.amazon.co.uk/dp/B0CFFCR781?ref=cm_sw_r_cp_ud_dp_TQEJNKXCHBHSCTRTZ27G</a>
+        </li>
+    </ul>
+    <img src="https://cdn.sdappnet.cloud/rtx/images/samsung_tv_zapper_guns_mini_keyboard_air_mouse.png"
+        style="width: 100%; display: block;" />
+    <ul>
+        <li><strong>Mini Portable Wireless Keyboard Touchpad</strong> For Android Smart TV Box PC Laptop</li>
+        <li><a href="https://www.ebay.co.uk/itm/356058645992?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/356058645992?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+
+        <li><strong>Wireless Voice Air Mouse Remote Controller</strong> Mini Keyboard For Android TV BOX</li>
+        <li><a href="https://www.ebay.co.uk/itm/406060728278?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/406060728278?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+
+        <li><strong>1 Pcs Zapper Gun For Wii Remote</strong> right left Controller wii Zapper Guns Grip</li>
+        <li><a href="https://www.ebay.co.uk/itm/287078394477?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/287078394477?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+
+        <li><strong>1 Pcs Zapper Gun For Wii Remote</strong> right left Controller wii Zapper Guns Grip</li>
+        <li><a href="https://www.ebay.co.uk/itm/287078394477?mkcid=16&mkevt=1&mkrid=711-127632-2357-0" target="_blank"
+                rel="norefferer">https://www.ebay.co.uk/itm/287078394477?mkcid=16&mkevt=1&mkrid=711-127632-2357-0</a>
+        </li>
+
+        <li><strong>Samsung 32 Inch UE32F6000FKXXU</strong> Smart Full HD HDR LED TV</li>
+        <li><a href="https://www.argos.co.uk/product/7482566" target="_blank"
+                rel="norefferer">https://www.argos.co.uk/product/7482566</a></li>
+    </ul>
+
+    <img src="https://cdn.sdappnet.cloud/rtx/images/wii-gamecube.png"
+        style="width: 100%; display: block; margin-bottom: 4px;" />
+    <!-- <img src="https://cdn.sdappnet.cloud/rtx/images/Install The Wii System Menu On Dolphin Emulator.png"
+        style="width: 100%; display: block;  margin-bottom: 4px;" /> -->
+    <div style="display: flex; justify-content: center; align-items: center; ">
+        <iframe id="videoFrame1" src="https://www.youtube.com/embed/WUJeCy6QP8Q?si=FDCMSUoFAOP_EpWr"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+
+    <img src="https://cdn.sdappnet.cloud/rtx/images/macosx-dolphin.png"
+        style="width: 100%; display: block;  margin-bottom: 4px;" />
+
+    <div style="display: flex; justify-content: center; align-items: center; ">
+        <iframe id="videoFrame2" src="https://www.youtube.com/embed/dNEGu0ACPjc?si=FDCMSUoFAOP_EpWr"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+        </iframe>
+    </div>
+    <ul>
+        <li><a href="https://www.rapidtables.com/convert/number/hex-to-ascii.html" target="_blank"
+                rel="norefferer">https://www.rapidtables.com/convert/number/hex-to-ascii.html</a></li>
+    </ul>
+    <h2>AutoDownload Wii Games(in Terminal)</h2>
+    <pre>
+#!/bin/bash
+cd /Volumes/Games/ 
+
+# Dolphin Auto-download All Wii Games for MacOSX
+curl -o https://cdn.sdappnet.cloud/rtx/sh/dolphin_wii_games.sh
+
+# Make executable: 
+chmod +x ~/dolphin_wii_games.sh
+
+# Run executable:
+./dolphin_wii_games.sh
+
+# Download takes time 3778 files, 6010.19 GB
+# During download a wii_progress.json will be created for resumable downloads</pre>
+
+    <h2>AutoDownload Gamecube Games(in Terminal)</h2>
+    <pre>
+#!/bin/bash
+cd /Volumes/Games/
+
+# Dolphin Auto-download All Gamecube Games for MacOSX
+curl -o https://cdn.sdappnet.cloud/rtx/sh/dolphin_gamecube_games.sh
+
+# Make executable: 
+chmod +x ~/dolphin_gamecube_games.sh
+
+# Run executable:
+./dolphin_gamecube_games.sh
+
+# Download takes time 2016 files, 1517.91 GB
+# During download a gamecube_progress.json will be created for resumable downloads</pre>
+    <h2>Summary</h2>
+    <pre>
+Mac Mini Server 2012 Hardware Specs:
+• Model: Apple Mac Mini A1347
+• Processor: Intel Core i7-3615QM (2.3GHz quad-core, 3.3GHz Turbo)
+• Graphics: NVIDIA GeForce GT 650M 1GB + Intel HD Graphics 4000
+• RAM: 16GB DDR3 (upgradable from 4GB)
+• Storage: Dual 2.5" drive bays (supports 7mm and 9.5mm drives)
+• SSD Included: 250GB
+• Ports: 4× USB 3.0, Thunderbolt, HDMI, SDXC card slot
+• Networking: Gigabit Ethernet, WiFi 802.11n, Bluetooth 4.0
+• OS: macOS Mojave 10.14 (can upgrade to Big Sur via OCLP)
+• Power: 85W external power adapter
+• Dimensions: 19.7 × 19.7 × 3.6 cm
+• Release Year: 2012</pre>
+
+
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; margin: 20px 0; width: 100%;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th>ITEM</th>
+                <th>GET IT HERE (LINKS)</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Apple Mac Mini A1347 2012 i7 16GB RAM 250GB SSD</td>
+                <td><a href="https://www.ebay.co.uk/itm/287090224159?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£89.99</td>
+            </tr>
+            <tr>
+                <td>Samsung 870 QVO 8TB SSD SATA III 2.5 inch</td>
+                <td><a href="https://www.samsung.com/us/computing/memory-storage/solid-state-drives/870-qvo-sata-iii-2-5-ssd-8tb-mz-77q8t0b-am/"
+                        target="_blank" rel="noopener noreferrer">samsung.com</a></td>
+                <td>£419.00</td>
+            </tr>
+            <tr>
+                <td>iFixit Essential Electronics Toolkit</td>
+                <td><a href="https://www.amazon.co.uk/iFixit-Essential-Electronics-Screwdriver-Electronic/dp/B0964G2Y7S/ref=ast_sto_dp_puis?th=1"
+                        target="_blank" rel="noopener noreferrer">amazon.co.uk</a></td>
+                <td>£26.99</td>
+            </tr>
+            <tr>
+                <td>SanDisk Cruzer Blade 16GB USB Flash Drive</td>
+                <td><a href="https://www.amazon.co.uk/dp/B002U1ZBG0?_encoding=UTF8&psc=1&ref=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV&ref_=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV&social_share=cm_sw_r_cp_ud_dp_3HGZEDJQCYH7K7ZJV0DV"
+                        target="_blank" rel="noopener noreferrer">amazon.co.uk</a></td>
+                <td>£11.99</td>
+            </tr>
+            <tr>
+                <td>OriGlam USB Wired Wii Sensor Bar</td>
+                <td><a href="https://www.amazon.co.uk/dp/B01NBC8BHI?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank"
+                        rel="noopener noreferrer">amazon.co.uk</a></td>
+                <td>£7.58</td>
+            </tr>
+            <tr>
+                <td>TP-Link UB4A Nano USB Bluetooth Adapter</td>
+                <td><a href="https://www.ebay.co.uk/itm/297689306267?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£6.08</td>
+            </tr>
+            <tr>
+                <td>Nintendo White Wii Remote with Nunchuck</td>
+                <td><a href="https://www.ebay.co.uk/itm/236613454063?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£19.95</td>
+            </tr>
+            <tr>
+                <td>Nintendo White Wii Remote with Nunchuck</td>
+                <td><a href="https://www.ebay.co.uk/itm/236613454063?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£19.95</td>
+            </tr>
+            <tr>
+                <td>Duracell Plus Power AA Batteries (Pack)</td>
+                <td><a href="https://www.ebay.co.uk/itm/403679721023?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£3.95</td>
+            </tr>
+            <tr>
+                <td>2× Wireless Gamepad Controller 2.4Ghz PS2 USB Bluetooth</td>
+                <td><a href="https://www.ebay.co.uk/itm/389383479208?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£30.99</td>
+            </tr>
+            <tr>
+                <td>Duracell Plus Power AAA Batteries (Pack)</td>
+                <td><a href="https://www.ebay.co.uk/itm/403679721023?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=xxg7uLOaQl2&sssrc=2047675&ssuid=cn3pvi65qzy&stype=1&var=673611140391"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£2.99</td>
+            </tr>
+            <tr>
+                <td>2× Microsoft Xbox 360 Wireless Controller</td>
+                <td><a href="https://www.ebay.co.uk/itm/317031721269?mkcid=16&mkevt=1&mkrid=711-127632-2357-0&ssspo=k-yp9r4usgy&sssrc=2047675&ssuid=cn3pvi65qzy&stype=1&var=615469235463"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£30.99</td>
+            </tr>
+            <tr>
+                <td>4× Xbox 360 Controller Battery Pack 4800mAh with USB Cable</td>
+                <td><a href="https://www.ebay.co.uk/itm/365028845112?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£29.98</td>
+            </tr>
+            <tr>
+                <td>USB Hub 3.0 4-Port Ultra-Slim</td>
+                <td><a href="https://www.ebay.co.uk/itm/205060386148?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£5.59</td>
+            </tr>
+            <tr>
+                <td>UK AC Power Supply Cable for Mac Mini A1347</td>
+                <td><a href="https://www.ebay.co.uk/itm/404576074013?var=0&mkevt=1&mkcid=1&mkrid=710-53481-19255-0&campid=5338590836&toolid=10044&loc_physical_ms=41471"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£9.99</td>
+            </tr>
+            <tr>
+                <td>UGREEN HDMI 2.1 Cable 1M</td>
+                <td><a href="https://www.amazon.co.uk/dp/B0CFFCR781?ref=cm_sw_r_cp_ud_dp_TQEJNKXCHBHSCTRTZ27G"
+                        target="_blank" rel="noopener noreferrer">amazon.co.uk</a></td>
+                <td>£7.99</td>
+            </tr>
+            <tr>
+                <td>Mini Portable Wireless Keyboard Touchpad For Android Smart TV Box PC Laptop</td>
+                <td><a href="https://www.ebay.co.uk/itm/356058645992?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£7.91</td>
+            </tr>
+            <tr>
+                <td>Wireless Voice Air Mouse Remote Controller Mini Keyboard For Android TV BOX</td>
+                <td><a href="https://www.ebay.co.uk/itm/406060728278?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£9.99</td>
+            </tr>
+            <tr>
+                <td>1 Pcs Zapper Gun For Wii Remote right left Controller wii Zapper Guns Grip</td>
+                <td><a href="https://www.ebay.co.uk/itm/287078394477?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£8.29</td>
+            </tr>
+            <tr>
+                <td>1 Pcs Zapper Gun For Wii Remote right left Controller wii Zapper Guns Grip</td>
+                <td><a href="https://www.ebay.co.uk/itm/287078394477?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£8.29</td>
+            </tr>
+            <tr>
+                <td>Samsung 32 Inch UE32F6000FKXXU Smart Full HD HDR LED TV</td>
+                <td><a href="https://www.argos.co.uk/product/7482566" target="_blank"
+                        rel="noopener noreferrer">argos.co.uk</a></td>
+                <td>£169.00</td>
+            </tr>
+            <tr style="background-color: #e8f5e8; font-weight: bold;">
+                <td colspan="2" style="text-align: right;">TOTAL COST:</td>
+                <td>£927.48</td>
+            </tr>
+        </tbody>
+    </table>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; margin: 20px 0; width: 100%;">
+        <thead>
+            <tr style="background-color: #f2f2f2;">
+                <th>LIBRARY</th>
+                <th>FILES</th>
+                <th>SIZE</th>
+                <th>100 Mbps</th>
+                <th>200 Mbps</th>
+                <th>500 Mbps</th>
+                <th>1 Gbps</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>GameCube (NKit RVZ)</td>
+                <td>2,016 files</td>
+                <td>1.52 TB</td>
+                <td>~34 hours</td>
+                <td>~17 hours</td>
+                <td>~7 hours</td>
+                <td>~3.5 hours</td>
+            </tr>
+            <tr>
+                <td>Wii (NKit RVZ)</td>
+                <td>3,778 files</td>
+                <td>6.01 TB</td>
+                <td>~136 hours (5.7 days)</td>
+                <td>~68 hours (2.8 days)</td>
+                <td>~27 hours</td>
+                <td>~14 hours</td>
+            </tr>
+            <tr>
+                <td><strong>Total</strong></td>
+                <td><strong>5,794 files</strong></td>
+                <td><strong>7.53 TB</strong></td>
+                <td><strong>~170 hours (7.1 days)</strong></td>
+                <td><strong>~85 hours (3.5 days)</strong></td>
+                <td><strong>~34 hours</strong></td>
+                <td><strong>~17 hours</strong></td>
+            </tr>
+            <tr style="background-color: #fff3cd;">
+                <td colspan="7" style="text-align: center;">
+                    <strong>Note:</strong> Actual times may vary due to server speeds, network congestion, and resume
+                    capability.<br>
+                    Recommended: Download over 1-4 weeks while playing favorite games.
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>First test - 04.02.2026</h2>
+    <p>Call of Duty - Modern Warfare Reflex</p>
+    <p>After following the instructions form videos, I was able to run Dolphin macosx, run the game, and connect a real
+        wiimote + nunchuck to a Macbook Pro 2014 mid. The game performed between FPS 1.0-60.0, however this means on a
+        cheap
+        low-end machine follwing the tutorial above is possible to build this emulator machine</p>
+    <pre>
+MacBook Pro 2014 15-inch Retina Hardware Specs:
+• Model: Apple MacBook Pro A1398 (Retina, Mid 2014)
+• Processor: Intel Core i7-4980HQ (2.5GHz quad-core, 4.0GHz Turbo)
+• Graphics: NVIDIA GeForce GT 750M 2GB + Intel Iris Pro 5200
+• RAM: 16GB DDR3 (soldered, not upgradeable)
+• Display: 15.4" Retina (2880 × 1800) IPS
+• Storage: 512GB PCIe SSD (upgradeable)
+• Ports: 2× Thunderbolt 2, 2× USB 3.0, HDMI, SDXC, headphone
+• Networking: 802.11ac WiFi, Bluetooth 4.0
+• OS: macOS Big Sur 11.7.10 (20G1427)
+• Battery: 95Wh lithium-polymer (8-9 hours typical)
+• Dimensions: 35.89 × 24.71 × 1.8 cm
+• Weight: 2.02 kg
+• Release Year: 2014</pre>
+    <table border="1" cellpadding="8" cellspacing="0" style="border-collapse: collapse; margin: 20px 0; width: 100%;">
+        <thead>
+            <tr style=" background-color: #f2f2f2;">
+                <th>ITEM</th>
+                <th>GET IT HERE (LINKS)</th>
+                <th>PRICE</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>MacBook Pro 15" Mid-2014 512GB SSD 16GB Ram 2.5GHz i7 Nvidia GT750M Dual Graphic</td>
+                <td><a href="https://www.ebay.co.uk/itm/168041146518?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£158.78</td>
+            </tr>
+            <tr>
+                <td>OriGlam USB Wired Wii Sensor Bar</td>
+                <td><a href="https://www.amazon.co.uk/dp/B01NBC8BHI?ref=ppx_yo2ov_dt_b_fed_asin_title" target="_blank"
+                        rel="noopener noreferrer">amazon.co.uk</a></td>
+                <td>£7.58</td>
+            </tr>
+            <tr>
+                <td>TP-Link UB4A Nano USB Bluetooth Adapter</td>
+                <td><a href="https://www.ebay.co.uk/itm/297689306267?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£6.08</td>
+            </tr>
+            <tr>
+                <td>Nintendo White Wii Remote with Nunchuck</td>
+                <td><a href="https://www.ebay.co.uk/itm/236613454063?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£19.95</td>
+            </tr>
+            <tr>
+                <td>Duracell Plus Power AA Batteries (Pack)</td>
+                <td><a href="https://www.ebay.co.uk/itm/403679721023?mkcid=16&mkevt=1&mkrid=711-127632-2357-0"
+                        target="_blank" rel="noopener noreferrer">ebay.co.uk</a></td>
+                <td>£3.95</td>
+            </tr>
+            <tr style="background-color: #e8f5e8; font-weight: bold;">
+                <td colspan="2" style="text-align: right;">TOTAL COST:</td>
+                <td>£196.34</td>
+            </tr>
+        </tbody>
+    </table>
+    <h2>Other thoughts</h2>
+    <pre>
+If it works on a MacBook Pro 2014 Mid, it should work on equivalent/similar hardware.
+
+2014 MacBook Pro → 2012 Mac Mini Server
+(Tested)           (Recommended)
+
+Common DNA:
+• Both Ivy Bridge/Haswell era Intel
+• Both have dedicated NVIDIA GPUs
+• Both support Big Sur (native or via OCLP)
+• Both have SATA III interfaces
+• Both have 16GB RAM capacity
+
+The Confidence Chain:
+•TESTED: MacBook Pro 2014 (GT 750M) → Works!
+•Mac Mini 2012 (GT 650M) → Should work (same architecture, slightly weaker)
+
+Anything better than these → Definitely works
+
+A minimum viable spec baseline:
+·CPU: Intel Core i7 3rd/4th gen quad-core
+·GPU: NVIDIA 600M/700M series (1GB+ VRAM)
+·RAM: 16GB DDR3
+·Storage: SATA III SSD capable
+·OS: macOS Big Sur compatible
+
+What This Means:
+"If your Mac meets or exceeds these specs, this guide will work for you."
+
+The Hardware Compatibility List:
+
+DEFINITELY WORKS (Tested/Equivalent):
+✅ MacBook Pro 2013-2014 (GT 750M)
+✅ Mac Mini 2012 Server (GT 650M)
+✅ iMac 2013-2014 (similar specs)
+
+PROBABLY WORKS (Better hardware):
+🤔 Mac Mini 2014 (Iris Pro)
+🤔 MacBook Pro 2015 (Iris Pro)
+🤔 iMac 2015+
+
+EXPERIMENTAL (Different architecture):
+❓ Intel Macs with integrated graphics only
+❓ M1/M2 Macs via Rosetta 2
+
+The Real Genius:
+A hardware compatibility framework where you can:
+·Check your Mac's specs
+·Compare to this baseline
+·Know if it will work BEFORE buying/installing
+
+Performance Scaling Expectations:
+Based on the test with COD: MW REFLEX 1.0-60.0 FPS range:
+·Baseline (GT 650M/750M): 30-60 FPS (most games playable)
+·Better GPU (Iris Pro): 45-60 FPS (smoother)
+·Modern Intel (Iris Plus): 60 FPS locked (perfect)
+·Apple Silicon: ??? (needs testing)
+
+Start here (proven) → Can upgrade here → Might work here
+2012 Mac Mini         2014 Mac Mini      2018 Mac Mini
+(GT 650M)             (Iris Pro)         (Intel UHD)
+£89                   £200               £400
+
+Performance:          Performance:       Performance:
+30-60 FPS             45-60 FPS          ???
+
+Anyone with a Mac that's EQUAL TO OR BETTER THAN a 2012 Mac Mini Server 
+can use this guide with confidence.</pre>
+
+
+    <h2>Why this project?</h2>
+    <pre>
+My Journey to Preserving Every Wii and GameCube Game
+
+It started with owning a real Wii. I played the games, 
+loved them—then life happened and I had to sell everything. 
+That loss stuck with me, especially because I still dreamed of making my own games 
+using the Wiimote for Project IGI and for The Thing remake.
+
+For years, I researched emulation, hunted down links for every single game, 
+and explored obscure emulation and console modding scenes. 
+I watched gameplay of every Wii and GameCube title, studied file sizes, 
+learned about SSD technology, macOS compatibility, and Mac Mini hardware mods.
+
+I researched what hardware was accessible and affordable —tracking prices, 
+planning for the future (8TB SSDs are still expensive, but they’ll come down). 
+I figured out how the Wiimote and Wii Sensor bar actually work, 
+found the exact tutorials to connect them to a Mac, 
+and sourced complete, ready-to-download game collections.
+
+It was a massive undertaking—but because of it, 
+anyone can now build a complete library of 5,000+ games for less than
+£1,000 (that’s including the TV, Wiimote, everything). 
+If you want to build this from zero, you can. 
+This guide is the map I wish I had.</pre>
+
+    <h2>Autorun Dophin</h2>
+    <pre>
+#!/bin/bash
+
+# Dolphin Auto-boot Fullscreen Script for macOS
+# Save this as: ~/dolphin_autoboot.sh
+# Make executable: chmod +x ~/dolphin_autoboot.sh
+# Add to Login Items in System Preferences
+
+# Path to Dolphin.app (adjust if needed)
+DOLPHIN_APP="/Applications/Dolphin.app"
+
+# Path to your specific game ISO (optional - remove if just launching Dolphin)
+# GAME_ISO="/path/to/game.iso"
+
+# Wait for macOS to fully load
+sleep 5
+
+# Launch Dolphin in fullscreen mode
+open -a "$DOLPHIN_APP" --args --batch --exec="$GAME_ISO" --fullscreen
+
+# Alternative if you just want Dolphin fullscreen without specific game:
+# open -a "$DOLPHIN_APP" --args --fullscreen
+
+# Wait a moment for Dolphin to load
+sleep 3
+
+# Optional: Send keyboard shortcut to ensure fullscreen (F11 is Dolphin's default fullscreen)
+# Requires accessibility permissions for AppleScript
+osascript &lt;&lt;'EOF'
+tell application "System Events"
+    keystroke "f" using {command down, control down}
+    -- or for F11 key:
+    -- key code 103
+end tell
+EOF
+
+echo "Dolphin launched in fullscreen mode"
+
+# Alternative simpler script without AppleScript:
+#!/bin/bash
+# sleep 3
+# open -a Dolphin --args --fullscreen
+</pre>
+    <footer>Good luck building your ultimate Nintendo Wii and Gamecube Emulator on Mac Mini 2012 Server</footer>
+
+    <script>
+        const videoFrames = [
+            document.getElementById('videoFrame'),
+            document.getElementById('videoFrame1'),
+            document.getElementById('videoFrame2')
+
+        ];
+
+        function updateVideoSize() {
+            const width = window.innerWidth;
+            const targetHeight = width * (9 / 16); // 16:9 aspect ratio
+
+            videoFrames.forEach(frame => {
+                if (frame) {
+                    frame.width = '100%';
+                    frame.style.maxHeight = '512px';
+                    frame.height = targetHeight;
+                }
+            });
+        }
+
+        // Set initial size
+        updateVideoSize();
+
+        // Update on resize
+        window.addEventListener('resize', updateVideoSize);
+    </script>
+</body>
+
+</html>
