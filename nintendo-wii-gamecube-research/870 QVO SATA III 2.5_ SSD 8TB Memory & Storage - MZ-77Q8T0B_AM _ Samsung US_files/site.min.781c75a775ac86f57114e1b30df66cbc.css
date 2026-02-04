@@ -1,0 +1,34 @@
+.recently-viewed{text-align:center;-webkit-transition:height 2s ease-in-out;transition:height 2s ease-in-out}
+.recently-viewed>.container{background-color:#fff}
+.recently-viewed>.container>*{opacity:1;-webkit-transition:opacity 2.5s ease-in-out;transition:opacity 2.5s ease-in-out}
+.recently-viewed--unpopulated>*:not(.recently-viewed__header){opacity:0}
+.recently-viewed--carousel{margin:0 auto}
+.recently-viewed__header{padding-top:12.56%}
+@media(min-width:769px){.recently-viewed__header{padding-top:5.1%}
+}
+.recently-viewed__header-wrap .type-h2{margin-bottom:8.6%}
+@media(min-width:769px){.recently-viewed__header-wrap .type-h2{margin-bottom:10.8%}
+}
+.recently-viewed__products{padding-bottom:12.56%}
+@media(min-width:769px){.recently-viewed__products{margin:0 auto;padding-bottom:5.1%;width:73.75%}
+}
+.recently-viewed__product-card .product-card__content--carousel{border:0 solid rgba(0,0,0,0);-webkit-box-sizing:border-box;box-sizing:border-box;background-clip:padding-box !important;float:left;position:relative;width:50%;padding-left:0;padding-right:0;margin-left:25%}
+.recently-viewed__product-card .product-card__content{width:90%;margin:0 auto}
+@media(max-width:768px){.recently-viewed__product-card .product-card__content{border:0 solid rgba(0,0,0,0);-webkit-box-sizing:border-box;box-sizing:border-box;background-clip:padding-box !important;float:left;position:relative;width:50%;padding-left:0;padding-right:0;margin-left:25%}
+}
+.recently-viewed__product-card .product-card__content--carousel{margin-left:2.5%;width:95%}
+.recently-viewed__product-card .product-card__title{color:#363636;margin-bottom:2.44%}
+@media(min-width:769px){.recently-viewed__product-card .product-card__title{margin-bottom:8.02%}
+}
+.recently-viewed__product-card .product-card__price{color:#636363}
+.recently-viewed__img{display:block;margin-bottom:7.77%;width:100%}
+@media(min-width:769px){.recently-viewed__img{margin-bottom:23%}
+}
+.recently-viewed .slick-active{opacity:1}
+.recently-viewed .slick-slider{margin:0}
+.recently-viewed .slick-dots{margin:0 0 12.56%;position:relative}
+@media(min-width:769px){.recently-viewed .slick-dots{margin:0 0 5.1%}
+}
+@media(min-width:769px){.recently-viewed .slick-dots li:nth-last-child(2),.recently-viewed .slick-dots li:last-child{display:none}
+}
+.recently-viewed .slick-dots li button::before{font-size:36px}

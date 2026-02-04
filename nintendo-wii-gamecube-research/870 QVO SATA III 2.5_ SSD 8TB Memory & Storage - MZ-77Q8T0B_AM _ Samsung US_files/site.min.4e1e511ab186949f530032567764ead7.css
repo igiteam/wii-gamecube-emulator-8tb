@@ -1,0 +1,584 @@
+.product-anchor-nav-v2 .chat-container{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex}
+.product-anchor-nav-v2 .chat-container .chat-icon{width:27px;height:27px;vertical-align:middle;margin-right:8px}
+@media(max-width:768px){.product-anchor-nav-v2 .chat-container .chat-icon{margin-right:0}
+}
+.chat-button:focus{outline:1px solid blue}
+.product-anchor-nav-v2 .chat-container .chat-button{font-family:"SamsungOneLatinWeb";font-weight:700;letter-spacing:.26px;font-weight:bold;color:#1428a0 !important;padding:8px 10px}
+@media(max-width:768px){.product-anchor-nav-v2 .chat-container .chat-button{font-size:0;letter-spacing:0;padding:0}
+}
+@media(min-width:769px){.product-anchor-nav-v2 .chat-container .chat-button{font-size:16px}
+}
+@media(min-width:768px){.product-anchor-nav-v2 .chat-container{padding-right:12px}
+}
+.product-anchor-nav-v2 .product-top-nav__header{display:inline-block;padding:0 28px;position:relative}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__header{padding:16px 0;display:flex;align-items:center;justify-content:center}
+}
+.product-anchor-nav-v2 .product-top-nav__header.not-available{display:none}
+.product-anchor-nav-v2 .product-epp-discount__header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;height:38px;width:100%;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;padding:0 16px;background:white}
+@media(max-width:768px){.product-anchor-nav-v2 .product-epp-discount__header.not-available{display:none}
+}
+.product-anchor-nav-v2 .product-epp-discount__header.not-available .product-epp-discount__title.active .product-epp-discount__info{max-width:30vw}
+.product-anchor-nav-v2 .product-epp-discount__header.not-available .product-epp-discount__title.active .product-epp-discount__info-title{max-width:none}
+@media(min-width:769px){.product-anchor-nav-v2 .product-epp-discount__header{position:relative;height:50px;height:auto;width:auto;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;padding:0;background:transparent}
+}
+.product-epp-discount__toggle:focus{outline:1px solid blue}
+@media(max-width:768px){.product-anchor-nav-v2 .product-epp-discount__header .product-epp-discount__toggle{color:black}
+}
+.product-anchor-nav-v2 .product-epp-discount__title{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
+.product-anchor-nav-v2 .product-epp-discount__title.active .product-epp-discount__info{max-width:250px;opacity:1}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-epp-discount__title.active .product-epp-discount__info{max-width:200px}
+}
+@media(min-width:769px) and (max-width:1000px){}
+.product-anchor-nav-v2 .product-epp-discount__title.active .product-epp-discount__finance{font-size:16px}
+.product-anchor-nav-v2 .product-epp-discount__title.active .product-epp-discount__finance b{font-size:16px}
+.product-anchor-nav-v2 .product-epp-discount__title p{white-space:nowrap;font-weight:bold;font-family:"SamsungOneLatinWeb"}
+@media(max-width:768px){.product-anchor-nav-v2 .product-epp-discount__title{width:100%}
+.product-anchor-nav-v2 .product-epp-discount__title .product-epp-discount__finance{line-height:38px;font-size:12px;color:black}
+.product-anchor-nav-v2 .product-epp-discount__title .product-epp-discount__finance span{color:black}
+.product-anchor-nav-v2 .product-epp-discount__title .product-epp-discount__finance b{font-size:12px}
+.product-anchor-nav-v2 .product-epp-discount__title .epp-store,.product-anchor-nav-v2 .product-epp-discount__title .epp-savings{color:black}
+}
+@media(max-width:600px){.product-anchor-nav-v2 .product-epp-discount__title .product-epp-discount__finance{line-height:20px;white-space:normal}
+}
+.product-anchor-nav-v2 .product-epp-discount__info{line-height:50px;-webkit-transition:all .3s ease-in-out;transition:all .3s ease-in-out;margin-right:2px;font-size:16px;max-width:0;opacity:0;display:none}
+@media(min-width:769px){.product-anchor-nav-v2 .product-epp-discount__info{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex}
+}
+.product-anchor-nav-v2 .product-epp-discount__info-title{max-width:150px;overflow:hidden;text-overflow:ellipsis}
+@media(min-width:1150px) and (max-width:1280px){.product-anchor-nav-v2 .product-epp-discount__info-title{max-width:100px}
+}
+.product-anchor-nav-v2 .product-epp-discount__info-price{margin-left:3px;-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-flex:0;-webkit-flex-grow:0;-ms-flex-positive:0;flex-grow:0}
+.product-anchor-nav-v2 .product-epp-discount__info-price.tv-page{margin-left:25px;font-size:20px}
+.product-anchor-nav-v2 .product-epp-discount__finance{line-height:50px;font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+@media(min-width:769px) and (max-width:1024px){.product-anchor-nav-v2 .product-epp-discount__finance{line-height:25px}
+.product-anchor-nav-v2 .product-epp-discount__finance b{display:block}
+}
+.product-anchor-nav-v2 .product-epp-discount__toggle{-webkit-transition:all .4s ease-in-out;transition:all .4s ease-in-out;cursor:pointer;padding:2px;font-size:18px}
+@media(min-width:769px){.product-anchor-nav-v2 .product-epp-discount__toggle{margin-left:10px}
+}
+.product-anchor-nav-v2 .product-epp-discount__toggle.transform{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
+.product-anchor-nav-v2 .product-epp-discount__dropdown{overflow:hidden;height:0;-webkit-box-shadow:2px 2px 5px 0 rgba(150,150,150,0.3);box-shadow:2px 2px 5px 0 rgba(150,150,150,0.3)}
+@media(min-width:769px){.product-anchor-nav-v2 .product-epp-discount__dropdown{width:360px;position:absolute;z-index:1999;left:-webkit-calc(100% - 50px);left:calc(100% - 50px)}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-epp-discount__dropdown{position:absolute;left:0;right:0;top:100%;z-index:1999}
+}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-container{background:white;padding:18px 16px}
+@media(max-width:768px){.product-anchor-nav-v2 .product-epp-discount__dropdown-container{width:100%}
+}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-header{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+@media(min-width:769px){.product-anchor-nav-v2 .product-epp-discount__dropdown-header{-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-label{color:black;font-family:"SamsungOneLatinWeb";font-size:14px;line-height:20px;font-weight:normal}
+@media(min-width:769px){.product-anchor-nav-v2 .product-epp-discount__dropdown-label{font-size:18px;line-height:22px}
+}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-clear{color:#1428a0;font-family:"SamsungOneLatinWeb";font-size:14px;line-height:20px;font-weight:bold;margin-left:30px;cursor:pointer}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-body{padding:0 15px}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-option{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;cursor:pointer;margin:20px 0}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-option span{margin-right:15px;-webkit-border-radius:50%;border-radius:50%;-webkit-box-shadow:0 0 0 2px #f3f3f3,0 0 0 3px black;box-shadow:0 0 0 2px #f3f3f3,0 0 0 3px black;height:10px;width:10px}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-option input{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-option input:checked ~ span{background:black}
+.product-anchor-nav-v2 .product-epp-discount__dropdown-learn{color:#1428a0;font-family:"SamsungOneLatinWeb";font-size:12px;letter-spacing:1.5px;line-height:22px;font-weight:bold;border-bottom:1px solid #1428a0;margin-left:42px;cursor:pointer}
+@media(max-width:768px){.product-anchor-nav-v2 .product-epp-discount__saving{color:black}
+.product-anchor-nav-v2 .product-epp-discount__saving .epp-discount-title{color:black}
+}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-header{flex-direction:column}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-container{background-color:#f3f3f3;padding-bottom:30px}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-body{display:flex;flex-wrap:wrap;margin-top:20px;padding:0}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-body .product-epp-discount__dropdown-option{width:calc(50% - 20px);margin:10px 10px 5px 5px}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-desc{font-size:12px;font-weight:normal}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown{width:600px;left:20%;box-shadow:0 4px 8px 0 rgba(0,0,0,.2),0 6px 20px 0 rgba(0,0,0,.19)}
+@media(max-width:768px){.product-top-nav__header.eppEnhance .product-epp-discount__dropdown{left:2px}
+}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-header .product-epp-discount__dropdown-label{color:#000;font-family:"SamsungSansSharp";font-weight:700;letter-spacing:0;line-height:25px;margin:0;text-align:center;font-size:24px;margin-bottom:20px}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-option .product-epp-discount__dropdown-label{font-size:15px;font-weight:bold}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-option span{position:relative;top:-10px}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-header .product-epp-discount__dropdown-img{height:39px;padding-right:10px;top:11px;position:relative}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-header .product-epp-discount__dropdown-learn{margin-left:0;border-bottom:1px solid #2189ff;color:#2189ff;letter-spacing:1.5px;letter-spacing:0;line-height:14px;text-transform:uppercase}
+.product-top-nav__header.eppEnhance .product-epp-discount__dropdown-option span{box-shadow:0 0 0 0 #f3f3f3,0 0 0 1px black;position:relative;top:-8px;width:20px;height:20px;background:white;box-sizing:border-box;margin-right:9px;background-color:#fff}
+.product-top-nav__header.eppEnhance .epp-discount-saveUp .save,.product-top-nav__header.eppEnhance .product-epp-discount__saving{color:#ff7c2e}
+.product-top-nav__header.eppEnhance .epp-blue{color:#2189ff}
+.product-top-nav__header.eppEnhance .product-epp-discount__toggle{color:#2189ff}
+.product-top-nav__header.eppEnhance .epp-store{color:#2189ff}
+.product-epp-discount__toast{display:none;z-index:2000;background:rgba(0,0,0,0.8);position:fixed;padding:10px 0;bottom:30px;left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%);width:90%;max-width:90%;-webkit-border-radius:4px;border-radius:4px}
+@media(min-width:769px){.product-epp-discount__toast{width:850px;padding:30px 0}
+}
+.product-epp-discount__toast p{font-family:"SamsungOneLatinWeb";font-weight:bold;color:white;font-size:13px;line-height:22px;text-align:center}
+@media(min-width:769px){.product-epp-discount__toast p{font-size:16px;line-height:19px}
+}
+.epp-bar-wrap.gnb-edited a{color:#1428a0}
+.epp-bar-wrap.gnb-edited .epp-login{font-weight:bold}
+.epp-bar-save{display:inline-block;font-size:.75em;vertical-align:middle;padding-left:20px;line-height:150%}
+.benfit-wrap__exit{font-size:.75em;font-weight:700;cursor:pointer}
+html.no-scroll,body.no-scroll{overflow:hidden}
+.product-anchor-nav-v2 .product-top-nav__identifier{z-index:98;-webkit-transform:translateZ(0);transform:translateZ(0);background-color:#fff;overflow:visible}
+.free_text{display:inline}
+.sticky_text{display:none}
+.epp-blue{color:#2189ff}
+.epp-orange{color:#ff7c2e}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__identifier.top-fix{left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+.product-anchor-nav-v2 .product-top-nav__identifier.top-fix.ha-nav{left:50%;-webkit-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}
+}
+.ha_nav.top-fix .product-top-nav__font-name{font-size:18px}
+.ha_nav.top-fix .free_text{display:none}
+.ha_nav.top-fix .sticky_text{display:inline}
+.ha_nav.top-fix .product-top-nav-right-side{width:auto}
+.ha_nav.top-fix .product-top-nav__font-deferred{display:none}
+.ha_nav.top-fix .tv-offer-bar{display:none}
+.ha_nav.top-fix .tv-offer-bar{display:none}
+@media(min-width:769px){.hide-desktop{display:none !important}
+}
+.hide-mobile .product-epp-discount__dropdown{top:50px;left:calc(100% - 86px)}
+@media(max-width:768px){.hide-mobile{display:none}
+}
+.ha_nav .product-top-nav__deferred-disclaimer{display:none !important}
+.product-anchor-nav-v2 .product-top-nav__details{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;padding:8px;background-color:#fff}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__details{min-height:75px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}
+}
+.product-anchor-nav-v2 .product-top-nav__details.newEnhance .product-top-nav__font-badge.product-top-nav__badge{-webkit-border-radius:12px !important;border-radius:12px !important;background-color:#006bea;color:#fff;font-family:"SamsungOneLatinWeb";font-size:10px;letter-spacing:.17px;line-height:12px;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start;padding:6px 10px 4px}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:stretch;-webkit-align-items:stretch;-ms-flex-align:stretch;align-items:stretch}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.product-top-nav__deferred{-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:end;-webkit-justify-content:flex-end;-ms-flex-pack:end;justify-content:flex-end}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.product-top-nav__deferred{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
+}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasAffirm .affirm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasTradein .product-top-nav__font-desc.neoStyle.tradein-message,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasRecycle .product-top-nav__font-desc.neoStyle.tradein-message{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:end;-webkit-align-items:flex-end;-ms-flex-align:end;align-items:flex-end;margin-right:-10px;text-align:right}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasTradein .product-top-nav__font-desc.neoStyle.tradein-message .tradein-headline,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasRecycle .product-top-nav__font-desc.neoStyle.tradein-message .tradein-headline{color:#6e6e73;font-family:"SamsungOneLatinWeb";font-size:12px;letter-spacing:.15px;line-height:14px;margin-bottom:10px;display:inline-block}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasTradein .product-top-nav__font-desc.neoStyle.tradein-message .tradein-headline,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasRecycle .product-top-nav__font-desc.neoStyle.tradein-message .tradein-headline{font-size:9px;margin-bottom:0}
+}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasTradein .product-top-nav__font-desc.neoStyle.tradein-message .tradein-value,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasRecycle .product-top-nav__font-desc.neoStyle.tradein-message .tradein-value{font-size:13px;font-weight:bold;margin-top:7px}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasTradein .product-top-nav__font-desc.neoStyle.tradein-message .tradein-value .tradein-range,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasRecycle .product-top-nav__font-desc.neoStyle.tradein-message .tradein-value .tradein-range{color:#ff7c2e}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasTradein .product-top-nav__font-desc.neoStyle.tradein-message:before,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasRecycle .product-top-nav__font-desc.neoStyle.tradein-message:before{display:none}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasTradein .product-top-nav__font-desc.neoStyle.tradein-message,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasRecycle .product-top-nav__font-desc.neoStyle.tradein-message{margin-right:50px}
+}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing.hasAccess .access{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;font-family:"SamsungOneLatinWeb";font-size:12px;letter-spacing:.15px;line-height:14px;margin-bottom:20px;color:#6e6e73}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc{margin-left:50px}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc:first-of-type{margin-left:1px}
+}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.neoStyle,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.finance{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;align-items:flex-start;position:relative}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.neoStyle.tradein-message,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.finance.tradein-message{display:none}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.neoStyle.total-price,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.finance.total-price{margin-left:0}
+}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.affirm,.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.access{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-webkit-align-items:flex-start;-ms-flex-align:start;-ms-grid-row-align:flex-start;align-items:flex-start;position:relative}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.finance-deferred{margin-left:0;color:#6e6e73;font-family:"SamsungOneLatinWeb";font-size:12px;letter-spacing:.15px;line-height:14px;margin-bottom:10px;display:inline-block;font-weight:normal}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc.finance-deferred:before{display:none}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc:before{content:'';height:100%;position:absolute;left:-25px;width:1px;border-left:1px solid #ddd}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc .product-top-nav__font-price{color:#ff7c2e;font-size:20px}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__pricing .product-top-nav__font-desc .product-top-nav__font-price sup{color:#6e6e73;font-weight:normal;top:-5px;font-size:8px}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__font-delete{font-size:10px}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .regular-font{color:#6e6e73;font-family:"SamsungOneLatinWeb";font-size:10px;letter-spacing:.25px;line-height:9px;font-weight:normal}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .headline{height:14px;color:#555;font-family:"SamsungOneLatinWeb";font-size:12px;letter-spacing:.15px;line-height:14px;margin-bottom:10px;display:inline-block}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.product-top-nav__details_quickbuy{display:block;padding:8px;background-color:#fff;box-shadow:0 2px 4px 0 rgba(0,0,0,0.25)}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__cta-wrapper{position:absolute;right:0}
+.product-anchor-nav-v2 .product-top-nav__details_quickbuy .product-top-nav__cta-wrapper{padding:0;display:flex;justify-content:space-around}
+}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__cta-wrapper .product-top-nav__cta{-webkit-border-radius:28px;border-radius:28px;background-color:#2189ff;color:#fff;font-family:"SamsungOneLatinWeb";font-size:11px;letter-spacing:.44px;line-height:17px;font-weight:bold}
+.product-anchor-nav-v2 .product-top-nav__details .product-top-nav__cta-wrapper .product-top-nav__cta.product-top-nav__cta-round-corner{-webkit-border-radius:25px;border-radius:25px;letter-spacing:.5px;background-color:#2189ff;color:#fff;font-family:"SamsungOneLatinWeb";font-size:14px;line-height:17px;font-weight:bold;text-transform:none}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__cta-wrapper .product-top-nav__cta_quickbuy{-webkit-border-radius:28px;border-radius:28px;background-color:#2189ff;color:#fff;font-family:"SamsungOneLatinWeb";font-size:11px;letter-spacing:.44px;line-height:17px;font-weight:bold}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__cta-wrapper .product-top-nav__cta{min-width:130px;height:40px}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__name{max-width:70%}
+}
+@media(max-width:459px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__name{max-width:65%}
+}
+@media(max-width:320px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__name{max-width:51%}
+}
+.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__font-deferred{-webkit-flex-basis:100%;-ms-flex-preferred-size:100%;flex-basis:100%;width:0}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__details.tvEnhance .product-top-nav__font-deferred{font-size:10px}
+.product-anchor-nav-v2 .product-top-nav__cta_quickbuy{min-width:120px;min-height:36px;letter-spacing:1px;line-height:1.5;background-color:#0077c8;color:#fff;text-transform:uppercase;-webkit-border-radius:2px;border-radius:2px;cursor:pointer;-webkit-transition:background-color .3s;transition:background-color .3s;font-size:10px;text-align:center;padding:6px 10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.product-anchor-nav-v2 .product-top-nav__details .product-top-nav__cta-wrapper .product-top-nav__cta_quickbuy{display:none}
+}
+.product-anchor-nav-v2 .product-top-nav__cta{min-width:120px;min-height:36px;letter-spacing:1px;line-height:1.5;background-color:#0077c8;color:#fff;text-transform:uppercase;-webkit-border-radius:2px;border-radius:2px;cursor:pointer;-webkit-transition:background-color .3s;transition:background-color .3s;font-size:10px;text-align:center;padding:6px 10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.product-anchor-nav-v2 .product-top-nav__cta_quickbuy{min-width:120px;min-height:36px;letter-spacing:1px;line-height:1.5;background-color:#0077c8;color:#fff;text-transform:uppercase;-webkit-border-radius:2px;border-radius:2px;cursor:pointer;-webkit-transition:background-color .3s;transition:background-color .3s;font-size:10px;text-align:center;padding:6px 10px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center}
+.product-anchor-nav-v2 .product-top-nav__cta.disable{background-color:grey;pointer-events:none}
+.product-anchor-nav-v2 .product-top-nav__cta_quickbuy.disable{background-color:grey}
+.product-anchor-nav-v2 .product-top-nav__cta.disable:hover{background-color:grey}
+.product-anchor-nav-v2 .product-top-nav__cta_quickbuy.disable:hover{background-color:grey}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__cta{min-width:168px;height:50px;letter-spacing:1.5px;font-size:12px;padding:0 14px;margin-right:20px}
+.product-anchor-nav-v2 .product-top-nav__cta_quickbuy{min-width:168px;height:50px;letter-spacing:1.5px;font-size:12px;padding:0 14px;margin-right:20px;display:none}
+.product-anchor-nav-v2 .product-top-nav__cta.disable:hover{background-color:grey}
+.product-anchor-nav-v2 .product-top-nav__cta_quickbuy.disable:hover{background-color:grey}
+.product-anchor-nav-v2 .product-top-nav__cta:hover,.product-anchor-nav-v2 .product-top-nav__cta:focus{background-color:#00497c}
+.product-anchor-nav-v2 .product-top-nav__cta_quickbuy:hover,.product-anchor-nav-v2 .product-top-nav__cta_quickbuy:focus{background-color:#00497c}
+}
+.product-anchor-nav-v2 .product-top-nav__cta-wrapper{padding:2px 7px 2px 21px}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__cta-wrapper{padding:2px 12px}
+.product-anchor-nav-v2 .product-top-nav__details_quickbuy .product-top-nav__cta-wrapper{display:flex}
+}
+.product-anchor-nav-v2 .product-top-nav__font-badge{color:#fff;font-weight:bold;line-height:1.22;width:-webkit-fit-content;width:fit-content;padding:6px 10px 4px;background-color:#006bea;padding:6px 10px 4px;-webkit-border-radius:12px;border-radius:12px;font-size:18px;font-family:"SamsungSansSharp"}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-top-nav__font-badge{font-size:1.40625vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__font-badge{font-size:10px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .product-top-nav__font-badge{font-size:2.77778vw}
+}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__font-badge{letter-spacing:.56px}
+}
+.product-anchor-nav-v2 .product-top-nav__font-name{color:rgba(0,0,0,0.85);font-weight:bold;line-height:1.25;font-size:24px;font-family:"SamsungSansSharp"}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-top-nav__font-name{font-size:1.875vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__font-name{font-size:14px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .product-top-nav__font-name{font-size:3.88889vw}
+}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__font-name{letter-spacing:.75px}
+}
+.product-anchor-nav-v2 .product-top-nav__font-name-sku{color:#a6a6a6;font-family:"SamsungOneLatinWeb";font-size:12px;letter-spacing:0;line-height:14px;display:none !important}
+.product-anchor-nav-v2 .product-top-nav__font-desc{color:#555;line-height:1.19;font-size:16px;font-family:"SamsungOneLatinWeb"}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-top-nav__font-desc{font-size:1.25vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__font-desc{font-size:11px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .product-top-nav__font-desc{font-size:3.05556vw}
+}
+.product-anchor-nav-v2 .product-top-nav__font-desc.finance-deferred{font-weight:normal}
+.product-anchor-nav-v2 .product-top-nav__font-desc.finance-deferred sup{font-size:100%;position:relative;top:-2px;vertical-align:top}
+.product-anchor-nav-v2 .product-top-nav__font-desc sup{font-size:.5em;position:relative;top:0;vertical-align:top}
+.product-anchor-nav-v2 .product-top-nav__font-desc .product-top-nav__font-price{font-size:24px;font-family:"SamsungOneLatinWeb"}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-top-nav__font-desc .product-top-nav__font-price{font-size:1.875vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__font-desc .product-top-nav__font-price{font-size:12px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .product-top-nav__font-desc .product-top-nav__font-price{font-size:3.33333vw}
+}
+.product-anchor-nav-v2 .product-top-nav__font-deferred{font-size:9px;font-family:"SamsungOneLatinWeb";display:block;letter-spacing:.19px;margin:3px 0;line-height:1.1}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-top-nav__font-deferred{font-size:.70312vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__font-deferred{font-size:7px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .product-top-nav__font-deferred{font-size:1.94444vw}
+}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__font-deferred{margin:0 0 2px}
+}
+.product-anchor-nav-v2 .product-top-nav__font-price{color:#0077c8;line-height:1.2;font-weight:bold;font-size:20px;font-family:"SamsungOneLatinWeb"}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-top-nav__font-price{font-size:1.5625vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__font-price{font-size:12px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .product-top-nav__font-price{font-size:3.33333vw}
+}
+.product-anchor-nav-v2 .product-top-nav__font-delete{text-decoration:line-through;color:#969696;font-weight:normal}
+.product-anchor-nav-v2 .product-top-nav__info{-webkit-box-flex:1;-webkit-flex-grow:1;-ms-flex-positive:1;flex-grow:1}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__info{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;padding-left:20px}
+}
+.product-anchor-nav-v2 .product-top-nav__name{padding:8px 0}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__name{padding:0}
+}
+.product-anchor-nav-v2 .product-top-nav__badge{min-height:1em}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__badge{display:none}
+}
+.product-anchor-nav-v2 .product-top-nav__pricing{-webkit-flex-shrink:0;-ms-flex-negative:0;flex-shrink:0;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}
+.product-anchor-nav-v2 .product-top-nav__pricing .b2bCTA{margin-left:26px;border:1px solid #1428a0;background-color:#1428a0;-webkit-border-radius:50px;border-radius:50px}
+.product-anchor-nav-v2 .product-top-nav__pricing .b2bCTA a{font-size:14px;line-height:18px;font-family:'SamsungOneLatinWeb';font-weight:700;color:#fff;padding:10px 24px}
+.product-anchor-nav-v2 .product-top-nav__pricing b{font-weight:bold}
+@media(min-width:769px){}
+.product-anchor-nav-v2 .product-top-nav__pricing .access{display:none}
+.product-anchor-nav-v2 .product-top-nav__pricing.product-top-nav__deferred sup{font-size:100%}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasAccess .access{display:inline}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasAccess .total,.product-anchor-nav-v2 .product-top-nav__pricing.hasAccess br,.product-anchor-nav-v2 .product-top-nav__pricing.hasAccess .neoFinancing{display:none}
+.product-anchor-nav-v2 .product-top-nav__pricing .recycle,.product-anchor-nav-v2 .product-top-nav__pricing .tradein{display:none}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasRecycle .recycle{display:block}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasRecycle .noRecycle,.product-anchor-nav-v2 .product-top-nav__pricing.hasRecycle br,.product-anchor-nav-v2 .product-top-nav__pricing.hasRecycle .total{display:none}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasTradein .tradein{display:inline}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasTradein .noTradein,.product-anchor-nav-v2 .product-top-nav__pricing.hasTradein br,.product-anchor-nav-v2 .product-top-nav__pricing.hasTradein .total{display:none}
+.product-anchor-nav-v2 .product-top-nav__pricing .affirm{display:none}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasAffirm .affirm{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex}
+.product-anchor-nav-v2 .product-top-nav__pricing.hasAffirm .finance{display:none !important}
+.product-anchor-nav-v2 .product-top-nav__navigation{border:1px solid #dadada;background-color:#fff;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:45px;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;position:relative}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__navigation{height:50px;padding:0 22px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between}
+}
+.product-anchor-nav-v2 .product-top-nav__link{padding:0 6px;height:40px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__link{height:45px}
+}
+.product-anchor-nav-v2 .product-top-nav__link:focus{outline:-webkit-focus-ring-color auto 1px}
+.product-anchor-nav-v2 .product-top-nav__link p{line-height:1.2;color:rgba(0,0,0,0.85);font-weight:bold;text-transform:uppercase;font-size:14px;font-family:"SamsungOneLatinWeb"}
+.product-anchor-nav-v2 .ha_nav .product-top-nav__link p{text-transform:capitalize}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .product-top-nav__link p{font-size:1.09375vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__link p{font-size:10px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .product-top-nav__link p{font-size:2.77778vw}
+}
+.product-anchor-nav-v2 .product-top-nav__actions{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+@media(max-width:768px){.product-anchor-nav-v2 .product-top-nav__actions{display:none}
+}
+.product-anchor-nav-v2 .product-top-nav__items{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex}
+.product-anchor-nav-v2 .product-top-nav__item{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;height:45px}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__item{height:50px}
+}
+.product-anchor-nav-v2 .product-top-nav__actions{padding:0 10px}
+.product-anchor-nav-v2 .product-top-nav__action{width:25px;height:25px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex}
+.product-anchor-nav-v2 .product-top-nav__wishlist{width:100%;height:100%;background-position:center;background-repeat:no-repeat;background-image:url("//image-us.samsung.com/SamsungUS/home/store-locator/icon_wishlist_default.svg")}
+.product-anchor-nav-v2 .product-top-nav__wishlist.selected{background-image:url("//image-us.samsung.com/SamsungUS/home/store-locator/icon_wishlist_selected.svg")}
+.product-anchor-nav-v2 .product-top-nav__wishlist:focus{outline:-webkit-focus-ring-color auto 1px}
+.product-anchor-nav-v2 .product-top-nav__underscore{background-color:rgba(0,0,0,0.85);display:none;height:2px;left:0;position:absolute;top:37px;-webkit-transition:left .5s,opacity .5s;transition:left .5s,opacity .5s;width:15px}
+@media(min-width:769px){.product-anchor-nav-v2 .product-top-nav__underscore{display:block;opacity:0}
+.product-anchor-nav-v2 .product-top-nav__underscore.active{opacity:1}
+}
+.nav-vb{display:none}
+.test-version .nav-vb{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;height:75px;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;background-color:white;width:100%}
+@media(min-width:769px){.test-version .nav-vb{display:none}
+}
+.test-version .nav-vb__title{font-size:14px;font-weight:700;font-family:'SamsungSansSharp';width:60%;padding-left:25px}
+.test-version .nav-vb__dropdown{width:40%;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;position:relative;height:100%}
+.test-version .nav-vb__dropdown.active .nav-vb__dropdown__items{display:block}
+.test-version .nav-vb__dropdown__key{font-size:12px;font-weight:700;padding-left:30px}
+.test-version .nav-vb__dropdown__key img{margin-left:10px}
+.test-version .nav-vb__dropdown__items{display:none;position:absolute;z-index:100;background:white;width:100%;text-align:center;top:100%}
+.test-version .nav-vb__dropdown__items__li{padding:12px 30px;text-align:left}
+.test-version .nav-vb__dropdown__items__li a{color:black;font-size:12px}
+.test-version .nav-vb__dropdown__items__li.active a{color:#ccc}
+@media(max-width:768px){.test-version .product-top-nav__name,.test-version .product-top-nav__navigation,.test-version .tv-offer-bar{display:none}
+.test-version .product-top-nav__identifier{top:auto !important;bottom:0;position:fixed}
+.test-version .product-top-nav__details{height:70px;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center;padding:0;padding-left:24px}
+.test-version .product-top-nav__details .product-top-nav__cta-wrapper{padding:0;height:100%}
+.test-version .product-top-nav__details .product-top-nav__info{height:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.test-version .product-top-nav__details .product-top-nav__cta{height:100%}
+.test-version .product-top-nav__details .product-top-nav__font-desc{font-size:12px;font-weight:700}
+}
+.product-anchor-nav-v2 .neoStyle{display:none}
+.product-anchor-nav-v2.isNEO .neoStyle{display:initial}
+.product-anchor-nav-v2.isNEO .noNEO{display:none}
+.product-anchor-nav-v2.isNEO .product-top-nav__badge{display:inline-block;padding:6px 10px 4px;-webkit-border-radius:6px;border-radius:6px;margin-bottom:5px;-webkit-align-self:flex-start;-ms-flex-item-align:start;align-self:flex-start}
+.product-anchor-nav-v2 .tv-offer-bar .hide{display:none}
+.product-anchor-nav-v2 .tv-offer-bar__wrapper{width:100%;background:#f7f7f7;position:relative}
+.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:16px;font-family:"SamsungOneLatinWeb";font-weight:bold;text-align:center;letter-spacing:.2px;width:-webkit-fit-content;width:fit-content;margin:auto;padding:10px;line-height:1.3;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:1.25vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:16px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:4.44444vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:12px;font-family:"SamsungOneLatinWeb"}
+}
+@media(max-width:768px) and (min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:.9375vw}
+}
+@media(max-width:768px) and (max-width:768px){.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:12px}
+}
+@media(max-width:768px) and (min-width:0) and (max-width:360px){.product-anchor-nav-v2 .tv-offer-bar__contentwrap{font-size:3.33333vw}
+}
+.product-anchor-nav-v2 .tv-offer-bar__contentwrap .pitch__icon{margin-right:10px}
+.product-anchor-nav-v2 .tv-offer-bar__icon{cursor:pointer;margin-left:45px}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar__icon{margin-left:12px}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend{position:relative;background:#f7f7f7;left:0;top:0;width:100%;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;z-index:999;padding:0 10%;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center}
+.product-anchor-nav-v2 .tv-offer-bar-extend__left{margin:20px 20px 20px 0;width:60%}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__left{width:100%;margin:14px 5.5% 14px}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend__left__title{font-size:24px;font-family:"SamsungSansSharp";font-weight:700;line-height:1.19}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__title{font-size:1.875vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__title{font-size:15px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__title{font-size:4.16667vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__title{line-height:19px}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend__left__subtitle{margin-top:10px;font-size:16px;font-family:"SamsungOneLatinWeb";line-height:1.3em}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__subtitle{font-size:1.25vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__subtitle{font-size:12px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__subtitle{font-size:3.33333vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__subtitle{line-height:17px}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend__left__footer{margin-top:50px;font-size:12px;font-family:"SamsungOneLatinWeb";color:#6d7278}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__footer{margin-top:18px}
+}
+@media(min-width:769px) and (max-width:1280px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__footer{font-size:.9375vw}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__footer{font-size:12px}
+}
+@media(min-width:0) and (max-width:360px){.product-anchor-nav-v2 .tv-offer-bar-extend__left__footer{font-size:3.33333vw}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend__right{width:40%;text-align:center}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__right{display:none}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend__right__img{max-width:100%;max-height:100%}
+.product-anchor-nav-v2 .tv-offer-bar-extend__signup{-webkit-border-radius:60px;border-radius:60px;background-color:#fff;padding:14px 40px;color:#000;font-family:"SamsungOneLatinWeb";font-size:14px;letter-spacing:.17px;line-height:17px;text-align:center;cursor:pointer;background-color:#1428a0;color:#FFF;cursor:pointer}
+.product-anchor-nav-v2 .tv-offer-bar-extend__signup:hover{background-color:#0c175c}
+.product-anchor-nav-v2 .tv-offer-bar-extend__cta{cursor:pointer;width:200px;height:100px;position:absolute;right:0;top:0}
+.product-anchor-nav-v2 .tv-offer-bar-extend__icon{margin-right:16%;margin-top:20px;float:right}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend__icon{margin-right:5.5%;margin-top:16px;font-size:12px}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown{padding:0 10% 0 5%;padding-top:34px;padding-bottom:50px}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend.countdown{padding-left:10%}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .tv-offer-bar-countdown{width:40%;padding:0 15px 0 0}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .tv-offer-bar-content{color:#000;width:59%;border-left:1px solid #bbb;padding-left:8%}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .tv-offer-bar-content-title{font-family:"SamsungSansSharp";font-size:16px;font-weight:bold;letter-spacing:.32px;line-height:20px}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .tv-offer-bar-content-desc{margin-top:10px;font-family:"SamsungOneLatinWeb";font-size:10px;letter-spacing:.2px;line-height:12px}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .tv-offer-bar-content-link{margin-top:5px;font-family:"SamsungOneLatinWeb";font-size:12px;letter-spacing:0;line-height:15.96px;font-weight:700;color:#000;text-decoration:underline}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend.countdown{-webkit-box-orient:vertical;-webkit-box-direction:normal;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .tv-offer-bar-countdown{padding:0;width:100%}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .tv-offer-bar-content{text-align:center;margin-top:30px;padding-left:0;border-left:0;width:100%}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown{text-align:center}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__title{font-family:"SamsungSansSharp";font-size:14px;font-weight:bold;letter-spacing:.09px;line-height:20px}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__content-count{margin:auto}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card{position:relative;text-align:center;display:inline-block;padding:0 10px}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card:first-child{padding-left:0}
+@media(min-width:769px){.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card:last-child{padding-right:0}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card:last-child:after{content:''}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card:after{content:':';position:absolute;top:10%;right:-9%;font-size:20.48px;font-weight:800}
+@media(min-width:769px){.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card:after{font-size:20.48px;font-weight:bold;letter-spacing:0}
+}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card:after{right:-9%;font-size:20.48px;font-weight:bold;letter-spacing:0;line-height:25.6px}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card-number{font-family:"SamsungSansSharp";-webkit-border-radius:36px;border-radius:36px;background-color:#000;color:#fff;font-size:20px;font-weight:bold;width:50px;height:35px;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;-js-display:flex;display:flex;-webkit-box-align:center;-webkit-align-items:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-webkit-justify-content:center;-ms-flex-pack:center;justify-content:center;letter-spacing:.4px}
+@media(max-width:768px){.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card-number{font-size:14px}
+}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card-unit{text-transform:uppercase;font-weight:bold;font-size:17.5px;letter-spacing:2.6px;text-align:left;margin-top:10px}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card-unit .visible-sm-block{font-size:8px;text-align:center}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card-unit .visible-lg-block{text-align:center;font-family:"SamsungOneLatinWeb";font-size:8px;font-weight:600;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:.5px}
+.product-anchor-nav-v2 .tv-offer-bar-extend.countdown .mobileReserve__countdown .mobileReserve__countdown__card-unit span{text-transform:uppercase}
+.product-anchor-nav-v2 .header-separator{border-right:1px solid #ddd;margin:0 8px;padding:0 8px}
+@media(max-width:1023px) and (min-width:769px){.product-anchor-nav-v2 .header-separator{position:relative}
+}
+.product-anchor-nav-v2 .product-top-nav-align{display:flex}
+.product-anchor-nav-v2 .product-top-nav-right-side{width:28vw}
+.product-anchor-nav-v2 .ha_nav .product-top-nav-right-side{width:auto}
+@media(min-width:740px) and (max-width:1040px){.product-anchor-nav-v2 .product-top-nav-right-side{width:16vw}
+}
+.product-anchor-nav-v2 .trade-in-nav-text{color:#000;text-align:right;font-family:"SamsungOneLatinWeb";font-size:12px;font-style:normal;font-weight:400}
+.product-anchor-nav-v2 .price-color{color:#ff7c2e !important}
+span.product-top-nav__font-desc.finance-deferred.finance .price-color{font-weight:bold}
+.product-anchor-nav-v2 .ha-trade-in-nav-text{display:none}
+.product-anchor-nav-v2 .product-top-nav__review{display:flex;padding:2px 22px 0;justify-content:flex-start;align-items:center;height:36px;border:1px solid #dadada;border-bottom:0}
+.product-anchor-nav-v2 .product-top-nav__sku-container{padding-left:6px}
+.product-anchor-nav-v2 .product-top-nav__sku-container .product-top-nav__sku-name,.product-anchor-nav-v2 .product-top-nav__sku-container .product-top-nav__sku,.product-anchor-nav-v2 .product-top-nav__sku-container .product-top-nav__sku-ob{font-weight:400;color:#a6a6a6}
+.product-anchor-nav-v2 .product-top-nav__review-separator{color:#a6a6a6;margin-left:10px;margin-right:10px}
+.product-anchor-nav-v2 .bv_stars_component_container{padding-right:10px !important}
+.product-anchor-nav-v2 [data-bv-show="rating_summary"] .bv_main_container .bv_button_buttonMinimalist.bv_war_button{display:none !important}
+.product-anchor-nav-v2 .hide-price{display:none !important}
+.product-top-nav__samsung-financing{font-family:"SamsungOneLatinWeb";font-weight:400;font-size:14px;color:#555;display:block;padding-bottom:2px}
+.product-anchor-nav-v2 .ha_nav.top-fix .product-top-nav__review{display:none}
+.thumbnail-top-nav{display:none}
+.product-anchor-nav-v2 .top-fix.product-top-nav__identifier{top:0 !important}
+@media(max-width:536px){.product-anchor-nav-v2 .top-fix .product-top-nav__name{display:none}
+.product-anchor-nav-v2 .top-fix .product-top-nav-align{display:flex;justify-content:space-between;align-items:center}
+.product-anchor-nav-v2 .top-fix .header-separator{border-right:0}
+.product-anchor-nav-v2 .top-fix .header-separator .total{font-family:'SamsungOneLatinWeb';font-size:8px;color:#6e6e73;letter-spacing:0;line-height:12px;font-weight:400}
+.product-anchor-nav-v2 .top-fix .product-top-nav__font-delete{font-family:'SamsungOneLatinWeb';font-size:8px;color:#6e6e73;letter-spacing:0;line-height:12px;font-weight:400}
+.top-fix .product-top-nav__samsung-financing{font-size:8px;color:#6e6e73;letter-spacing:0;line-height:12px}
+.product-anchor-nav-v2 .top-fix .product-top-nav__font-desc.finance-deferred{font-size:8px;color:#6e6e73;letter-spacing:0}
+.top-fix span.epp-deferred-month.price-color{font-size:12px;letter-spacing:0;line-height:14px;font-weight:700}
+.top-fix .product-top-nav__review{display:none}
+.top-fix .product-top-nav__cta-wrapper{display:none}
+.product-anchor-nav-v2 .top-fix .product-top-nav__link p{font-family:'SamsungOneLatinWeb';font-size:12px;color:rgba(0,0,0,0.85);letter-spacing:0;text-align:center;font-weight:400}
+.top-fix .thumbnail-top-nav{display:block}
+.top-fix .thumbnail-top-nav img{display:block;max-width:100%;max-height:46px}
+.product-anchor-nav-v2 .top-fix .product-top-nav__header{display:none}
+.product-anchor-nav-v2 .top-fix .product-top-nav__navigation{border-left:0;border-right:0}
+}
+@media(max-width:360px){.product-anchor-nav-v2 .top-fix .product-top-nav__link{padding:0 6px}
+}
+@media(min-width:768px){.top-fix .product-top-nav__font-name{overflow:hidden;text-overflow:ellipsis;display:-webkit-box;line-clamp:2;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.top-fix .product-top-nav__navigation{border-bottom:1px solid #ddd;border-top:0;border-left:0;border-right:0;height:35px;padding-bottom:15px}
+.product-anchor-nav-v2 .top-fix .product-top-nav__underscore.active{top:22px}
+.product-anchor-nav-v2 .top-fix .product-epp-discount__header{display:none}
+.product-anchor-nav-v2 .top-fix .product-top-nav__actions{display:none}
+}
+.product-epp-discount__header a,.product-top-nav__header a{color:#2289ff;font-weight:bold}
+#DA_nav_redesign{.product-top-nav__identifier{max-width:100%}
+.product-top-nav__details{max-width:1440px;margin-left:auto;margin-right:auto;padding:12px 24px 4px;margin-top:12px}
+.product-top-nav__info{padding-left:0;padding-right:24px}
+.product-top-nav__name{padding:0}
+.product-top-nav__cta-wrapper{padding:0}
+@media(min-width:769px){.product-top-nav__cta-wrapper{padding:0}
+}
+.top-fix .product-top-nav__details{padding:12px 24px 12px}
+.product-top-nav__review{max-width:1440px;margin-left:auto;margin-right:auto;flex-direction:row-reverse;justify-content:flex-end;border:0;border-bottom:0;padding:2px 24px 0}
+.product-top-nav__navigation__container{border-bottom:1px solid #dadada}
+.top-fix .product-top-nav__navigation__container{border-top:1px solid #dadada}
+.product-top-nav__navigation{border:0;max-width:1440px;margin-left:auto;margin-right:auto}
+@media(min-width:769px){.product-top-nav__navigation{padding:0 24px}
+}
+.product-top-nav__link{margin:0 24px 0 0;padding:0}
+@media(min-width:768px){.top-fix .product-top-nav__navigation{height:50px;padding:0 24px}
+}
+[data-bv-show="rating_summary"] .bv_main_container_row_flex:not(.bv_ratings_summary){display:none !important}
+.product-top-nav__pricing.product-top-nav__deferred{display:flex;flex-direction:column;align-items:flex-end;gap:2px}
+.product-top-nav__pricing.product-top-nav__deferred.hasAffirm,.product-top-nav__pricing.product-top-nav__deferred.payMonthly{.product-top-nav__product-price__container .product-top-nav__font-price{display:none !important}
+}
+.product-top-nav__pricing .finance{display:none !important}
+.product-top-nav__pricing.payMonthly .finance{display:block !important;color:#000;font-weight:bold;font-size:20px;font-family:"SamsungOneLatinWeb"}
+.bv_main_container_row_flex.bv_ratings_summary{align-items:center !important;padding-right:10px !important;margin:0 !important}
+.product-top-nav__review .bv_avgRating_component_container,.product-top-nav__review .bv_numReviews_text{color:#000 !important;font-size:12px !important;font-weight:900 !important;font-family:"SamsungOneLatinWeb"}
+.product-top-nav__font-save-price{font-family:"SamsungOneLatinWeb";font-size:14px;color:#04863f;font-weight:700}
+.product-top-nav__font-price{color:#000;line-height:normal}
+.product-top-nav__price-options-info__container .product-top-nav__font-price{font-family:"SamsungOneLatinWeb";font-size:20px;color:#000;font-weight:bold;line-height:normal}
+.installment-sign{top:-4px;left:-3px}
+.product-top-nav__link{position:relative}
+.product-top-nav__link::after{content:'';position:absolute;bottom:-4px;left:0;width:0;height:2px;background-color:rgba(0,0,0,0.85);transition:width .3s ease}
+.product-top-nav__link.active::after{width:100%}
+.product-top-nav__badge{font-size:12px;font-family:'SamsungOneLatinWeb';font-weight:900;background:#006bea;border-radius:4px;padding:6px 8px;display:block;margin-bottom:-9px}
+.product-top-nav__font-name{font-size:24px;font-family:'SamsungSharpSans';font-weight:700;max-width:100%;padding-right:30px}
+.product-top-nav__badge-container{max-width:1440px;margin-left:auto;margin-right:auto;padding:0 24px 0 24px;margin-top:12px}
+[data-bv-show="rating_summary"] .bv_main_container .bv_stars_component_container{padding-right:10px !important}
+.product-top-nav__sku{font-size:14px}
+.product-top-nav__link p{font-size:16px;color:#000;font-weight:700}
+.product-top-nav__details.product-top-nav__mobile-bottom-container{display:none;.product-top-nav__pricing.product-top-nav__deferred{display:flex !important;flex-wrap:wrap;width:100%;max-width:60%}
+.product-top-nav__font-price{font-size:20px;display:flex;flex-wrap:wrap;max-width:300px}
+.product-top-nav__pricing.payMonthly .finance,.product-top-nav__price-options-info__container .product-top-nav__font-price{font-size:20px}
+.product-top-nav__pricing.payMonthly .finance{display:flex !important;flex-wrap:wrap;font-size:20px}
+.product-top-nav__cta-wrapper{display:block !important}
+}
+@media(max-width:768px){.product-top-nav__link::after{bottom:-5px}
+.product-top-nav__pricing.product-top-nav__deferred{display:none !important}
+.product-top-nav__cta-wrapper{display:none !important}
+.product-top-nav__font-name{max-width:100%}
+.top-fix .product-top-nav__badge-container,.top-fix .product-top-nav__details{display:none}
+.product-top-nav__details.product-top-nav__mobile-bottom-container{display:flex;justify-content:space-between;position:fixed;bottom:0;z-index:999;width:100%;border-top:1px solid #dadada;align-items:center;padding:12px 16px;.product-top-nav__deferred{align-items:flex-start}
+}
+.product-top-nav__link p{font-size:14px;color:#000;font-weight:700}
+.product-top-nav__badge-container{padding:0 25px 0 16px;margin-top:24px}
+.product-top-nav__details{padding:0 25px 0 16px}
+.product-top-nav__review{padding:4px 25px 4px 16px}
+.product-top-nav__navigation{justify-content:flex-start;padding-left:16px}
+.top-fix .product-top-nav__link p{font-size:14px;color:#000;font-weight:700}
+.product-top-nav__details{margin-top:24px}
+.bv_main_container_row_flex.bv_ratings_summary{padding-right:6px !important}
+}
+@media(min-width:769px) and (max-width:1280px){.product-top-nav__link p{font-size:16px}
+}
+.bv-da-wrapper{display:inline-flex !important;align-items:center !important;position:relative !important}
+.bv-da-wrapper .bv_numReviews_component_container{font-size:0 !important}
+.bv-da-wrapper .bv_numReviews_text{font-size:12px !important;font-weight:900 !important;font-family:"SamsungOneLatinWeb" !important}
+.bv-da-wrapper .bv_avgRating_component_container{margin-right:2px !important;font-size:12px !important;font-weight:900 !important;font-family:"SamsungOneLatinWeb" !important}
+.bv_numReviews_component_container{display:none !important}
+.bv_avgRating_component_container{display:none !important}
+.bv-da-wrapper .bv_numReviews_component_container,.bv-da-wrapper .bv_avgRating_component_container{display:inline-flex !important}
+.bv-da-wrapper::after{content:"";position:absolute;bottom:-5px;left:0;width:100%;height:2px;background-color:#000;pointer-events:none}
+@media screen and (max-width:768px){.product-top-nav__items{overflow-x:auto;white-space:nowrap;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none}
+.product-top-nav__items::-webkit-scrollbar{display:none}
+.product-top-nav__items .product-top-nav__item{display:inline-block}
+}
+.sales-pitch-banner-container{width:100%;min-height:44px;background-color:#fff;padding:10px 0;display:flex;justify-content:center;align-items:center;overflow:hidden;border-bottom:1px solid #dadada;position:relative}
+.top-fix .sales-pitch-banner-container{display:none}
+.items-group{display:flex;justify-content:center;align-items:center;width:100%;flex-wrap:wrap;gap:10px;position:relative;max-width:1440px}
+.pitch-item{display:flex;align-items:center;margin:5px 10px}
+.pitch-item img.icon-placeholder{width:25px;height:25px;margin-right:8px;margin-bottom:-1px;object-fit:cover}
+#recycle-item-mobile{.icon-placeholder{width:16px;height:16px;margin-right:8px;margin-bottom:-2px;object-fit:cover}
+}
+.pitch-item-text{font-family:'SamsungOneLatinWeb';font-size:16px;color:#000;letter-spacing:.2px;line-height:17px;font-weight:700}
+@media(max-width:768px){.sales-pitch-banner-container{min-height:41px;padding:0}
+.items-group{max-width:100%;flex-wrap:nowrap;overflow-x:auto;justify-content:flex-start;padding:12px 16px;gap:24px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.items-group::-webkit-scrollbar{display:none}
+.sales-pitch-banner-container::after{content:'';position:absolute;top:0;bottom:0;pointer-events:none;z-index:2;right:0;width:203px;background-image:linear-gradient(90deg,rgba(255,255,255,0.00) 0,#fff 100%);opacity:0;visibility:hidden;transition:opacity .3s ease-in-out,visibility 0 linear .3s}
+.sales-pitch-banner-container.show-right-fade::after{opacity:1;visibility:visible;transition-delay:0}
+.pitch-item{flex-shrink:0;margin:0;height:16px}
+.pitch-item img.icon-placeholder{width:22px;height:22px;margin-right:5px}
+.pitch-item-text{font-size:12px;line-height:16px;white-space:nowrap}
+}
+@media(min-width:769px)and (max-width:829px){.pitch-item-text{font-size:14px}
+}
+.tv-offer-bar__contentwrap{padding-left:16px}
+.tv-offer-bar__wrapper{width:100%;background:#fff;position:relative;border-bottom:1px solid #dadada}
+.tv-offer-bar__contentwrap .pitch__icon{margin-right:10px;width:20px}
+.product-top-nav__eip{display:none !important}
+}
+.product-top-nav__name h2{font-family:"SamsungOneLatinWeb";font-size:16px;color:#000;text-align:left;font-weight:400;margin-top:6px}
+.comp-value-info{display:flex;flex-direction:column;width:max-content;justify-content:center;margin-bottom:2px;cursor:pointer}
+.product-top-nav__product-save-price__container{gap:4px}
+.font-xsmall{font-size:10px !important}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="17px" viewBox="0 0 18 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>icon_wishlist_default</title>
+    <desc>Created with Sketch.</desc>
+    <g id="P-Cards" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-22.000000, -60.000000)" stroke="#1428A0" stroke-width="2">
+            <path d="M37.6190476,72.5266131 L37.6190476,63.3678829 C37.6190476,61.1149118 35.7926537,59.2885178 33.5396825,59.2885178 C31.2867114,59.2885178 29.4603175,61.1149118 29.4603175,63.3678829 L29.4603175,64.3678829 L28.4603175,64.3678829 C26.2073463,64.3678829 24.3809524,66.1942769 24.3809524,68.447248 C24.3809524,70.7002191 26.2073463,72.5266131 28.4603175,72.5266131 L37.6190476,72.5266131 Z" id="icon_wishlist_default" transform="translate(31.000000, 65.907565) rotate(45.000000) translate(-31.000000, -65.907565) "></path>
+        </g>
+    </g>
+</svg>

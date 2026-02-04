@@ -1,0 +1,24 @@
+.breadscrumb__wrapper{background-color:#fff}
+.breadscrumb__path>ol>li>a:focus{outline:1px solid blue}
+.breadscrumb__path{padding-top:1.12994%;padding-bottom:1.12994%;padding-left:0;padding-right:0;margin:0}
+@media(min-width:769px){.breadscrumb__path{width:83.4%}
+}
+.breadscrumb__path li[property=itemListElement]{display:inline}
+@media(min-width:769px){.breadscrumb__path li[property=itemListElement]{line-height:130%}
+}
+.breadscrumb__path li:last-of-type{font-weight:bold}
+.breadscrumb__path a[property=item],.breadscrumb__path span[property=name]{color:#a6a6a6}
+@media(max-width:768px){.breadscrumb__path{display:none}
+}
+.breadscrumb__path--smallFont{font-size:11.5px;letter-spacing:.2px}
+.breadscrumb__path--smallFont a[property=item],.breadscrumb__path--smallFont span[property=name]{color:#646464}
+.breadscrumb__path--smallFont li:nth-last-child(2){font-weight:bold}
+.breadscrumb__path--smallFont .breadscrumb--rightItem{font-size:12px;font-weight:bold;font-style:normal;font-stretch:normal;line-height:normal;letter-spacing:.2px;text-align:center;color:#1428a0}
+@media(min-width:769px){.breadscrumb__path--smallFont .breadscrumb--rightItem{float:right}
+}
+@media(max-width:768px){.breadscrumb__path--smallFont{display:block}
+.breadscrumb__path--smallFont li[property=itemListElement]{display:none}
+.breadscrumb__path--smallFont li:nth-last-child(2){text-align:center;display:block;text-transform:uppercase;padding-top:2.27273%;padding-bottom:2.27273%}
+.breadscrumb__path--smallFont li:nth-last-child(1){display:block;text-align:center;border:8px solid #f2f2f2;padding-top:2.27273%;padding-bottom:2.27273%}
+}
+.breadscrumb__path--shipInfo{width:100%}

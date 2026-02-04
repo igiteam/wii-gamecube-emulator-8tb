@@ -1,0 +1,6 @@
+.page-title{background-color:#fff;color:#a6a6a6;padding:3.9% 0;text-align:center;text-transform:uppercase;border-top:2px solid #dadada;border-bottom:2px solid #dadada}
+.page-title p.type-cp1{color:#a6a6a6}
+@media(min-width:769px){.page-title{display:none}
+}
+@media(max-width:768px){.page-title.hide-in-mobile{display:none}
+}

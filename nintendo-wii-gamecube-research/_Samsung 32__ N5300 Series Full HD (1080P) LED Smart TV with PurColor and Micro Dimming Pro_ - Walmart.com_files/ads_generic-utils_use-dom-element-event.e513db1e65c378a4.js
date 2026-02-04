@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[16102],{120490:function(e,n,t){t.d(n,{x:function(){return f}});var c=t(194742);function f(e,n,t){(0,c.useEffect)((()=>e?(n.forEach((n=>{e.addEventListener(n,t)})),()=>{n.forEach((n=>{e.removeEventListener(n,t)}))}):()=>{}),[e,n,t])}}}]);

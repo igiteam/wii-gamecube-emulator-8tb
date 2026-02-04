@@ -1,0 +1,23 @@
+.disclaimer{background:#fff;overflow:hidden}
+.disclaimer__row{margin-bottom:10px}
+.disclaimer__show{margin-bottom:10px}
+.disclaimer__show br:last-of-type{display:none}
+.disclaimer__show__link{color:#20a2ff;cursor:pointer;display:inline-block;margin-left:5px}
+.disclaimer__hide{margin-bottom:10px;display:none}
+.disclaimer__hide br:last-of-type{display:none}
+.disclaimer__hide__link{cursor:pointer;color:#20a2ff;display:inline-block;margin-left:5px}
+.disclaimer a:hover{cursor:pointer}
+.disclaimer__inner{color:#363636;padding:0 3%;font-size:14px;font-size:.875rem;line-height:normal;margin-bottom:10px;font-weight:normal;font-family:"SamsungOneLatinWeb"}
+.disclaimer__inner sup{font-size:.7em}
+.disclaimer__inner b{font-weight:700}
+.disclaimer__inner i{font-style:italic}
+.disclaimer__inner p{font-size:14px;font-size:.875rem;line-height:normal;margin-bottom:10px;font-weight:normal;font-family:"SamsungOneLatinWeb"}
+.disclaimer__single{display:inline;white-space:nowrap}
+.disclaimer__single.disclaimer-range{width:auto;overflow:hidden}
+.disclaimer__single.disclaimer-range.active{white-space:normal;width:100%;overflow:hidden;text-overflow:ellipsis}
+.disclaimer__accordian__container{margin-bottom:10px}
+.disclaimer__accordian__title{padding-left:2rem;position:relative;color:#363636;font-size:15px !important;font-family:"SamsungSansSharp" !important;color:#363636;font-weight:700 !important;cursor:pointer}
+.disclaimer__accordian__title:before{content:'>';display:block;width:16px;height:16px;border:2px solid #000;color:#000;text-align:center;font-weight:bold;-webkit-border-radius:100%;border-radius:100%;position:absolute;top:50%;margin-top:-10px;line-height:16px;left:0;-webkit-transition:all .25s;transition:all .25s;-webkit-transform:rotate(90deg);-ms-transform:rotate(90deg);transform:rotate(90deg);font-size:12px;font-family:SamsungOneLatinWeb}
+.show .disclaimer__accordian__title:before{-webkit-transform:rotate(-90deg);-ms-transform:rotate(-90deg);transform:rotate(-90deg);background:#000;color:#fff}
+.disclaimer__accordian__body{font-weight:400;font-size:14px;line-height:1.71;height:0;padding-left:2rem;margin-bottom:0;overflow:hidden}
+.show .disclaimer__accordian__body{display:block;height:auto;margin-bottom:10px}

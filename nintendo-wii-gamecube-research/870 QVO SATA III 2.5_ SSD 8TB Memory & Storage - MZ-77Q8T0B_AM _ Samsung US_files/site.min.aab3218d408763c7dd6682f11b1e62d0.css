@@ -1,0 +1,21 @@
+.product-summary.isNEO{display:none}
+.product-summary--dark{background-color:#000}
+.product-summary--dark .container{background-color:#000}
+.product-summary-wrapper{min-height:30px}
+.product-summary__card{border-right:1px solid #dadada !important;min-height:244px}
+.product-summary__card .card__content-area{position:absolute;top:50%;-webkit-transform:translate3D(0,-50%,0);-ms-transform:translate3D(0,-50%,0);transform:translate3D(0,-50%,0);text-align:center;left:8px;right:8px}
+.product-summary__card .card__content-area strong{display:block}
+.product-summary__card .card__icon{height:56px;margin-bottom:15px;width:auto}
+.product-summary__card .card__icon-text__main{font-size:44px;font-weight:200;left:-8px;letter-spacing:-.1em;line-height:56px;margin-bottom:3.1%;position:relative}
+.product-summary__card .card__icon-text__suffix{font-size:17px;font-weight:400;letter-spacing:0;margin-left:5px;position:absolute;text-transform:uppercase;top:11px}
+.product-summary__card .card__desc{font-weight:400}
+.product-summary__card:last-child{border-right:0}
+.product-summary .icon-star-filled{font-size:24px}
+.product-summary__rating{text-align:center}
+.product-summary__rating .star-rating{margin:75px 0 24px}
+.product-summary__rating .star-rating__star{display:inline-block;position:relative}
+.product-summary__rating .star-rating__star .icon-star-filled{left:0;font-size:24px;overflow:hidden;position:absolute;top:0}
+.product-summary__rating .star-rating__star .icon-star-empty{font-size:24px}
+.product-summary__rating .star-rating .icon-star-versatile::before{content:'\e905';font-size:24px}
+.product-summary__rating .linguistic-rating{letter-spacing:.1em;text-transform:uppercase}
+.product-summary__rating .linguistic-rating__count{color:#a6a6a6}
